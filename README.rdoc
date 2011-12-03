@@ -4,17 +4,51 @@ Gbooks is a lightweight wrapper for Google Book Search on Rails. It is inspired 
 
 Though Gbooks provides access to the majority of relevant attributes provided by Google Books, it is not entirely comprehensive.
 
+By default, Gbooks can query the following attributes:
+
+* Title
+* Authors
+
 === Support for distributed clustering
 
-The current Google API for Books requires generally that a users IP address be geolocatable. This can cause responses to be restricted when requested from distributed/clustered servers such as Heroku.
+The current Google API for Books generally requires that a users IP address be geolocatable. This can cause responses to be restricted when requested from distributed/clustered servers such as Heroku.
 
 http://www.google.com/support/forum/p/booksearch-apis/thread?tid=2034bed9a98c15cb&hl=en
 
-Gbooks can circumvent these issues by adding an X-Forwarded-For HTTP header to each request that contains the IP address of the user. In most cases, you can pass the user's IP address in your search request:
+Gbooks can circumvent these issues by adding an X-Forwarded-For HTTP header to each request that contains the IP address of the user. In most cases, you can pass the user's IP address as a parameter in your search request:
 
   Gbooks.search("Search Query", {options}, request.remote_ip)
 
 Doing this will, for the most part, enable you to query the Google API from apps that reside on Heroku servers.
+
+=== ISBN
+
+ISBN numbers come in two varieties: 10-digit and 13-digits. Most books possess both versions.
+
+Gbook can be configured to an return either ISBN, but attempts to return the 13-digit version by default. If the 13-digit version cannot be found, Gbooks tries the 10-digit version, and finally returns nil.
+
+=== Image links
+
+When possible, Gbooks will return links to an image of a book's cover. The size of this image is configurable by passing an numerical argument between 1-7 to the image_link attribute, which is passed to the zoom attribute in the URL query.
+
+  book = Gbooks.search("The Great Gatsby").first
+  book.image_link(1) # link to a medium sized image
+  book.image_link(5) # link to a thumbnail sized image
+  book.image_link(7) # link to a large sized image
+  
+This enables you to manipulate and cull different sized images on the fly without cluttering the codebase with added methods.
+
+=== Examples
+
+  Here are some examples that you can use
+  
+  
+  
+  
+  
+  
+  
+  
 
 == Devise
 
