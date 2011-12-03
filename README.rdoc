@@ -36,7 +36,7 @@ When possible, Gbooks will return links to an image of a book's cover. The size 
   book.image_link(5) # link to a thumbnail sized image
   book.image_link(7) # link to a large sized image
   
-This enables you to manipulate and cull different sized images on the fly without cluttering the codebase with added methods.
+This enables you to manipulate and cull different sized images on the fly without cluttering the codebase with overly verbose methods.
 
 === Examples
 
