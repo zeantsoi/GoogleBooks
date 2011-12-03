@@ -1,8 +1,6 @@
 == Gbooks
 
-Gbooks is a lightweight wrapper for Google Book Search on Rails. It is inspired by the google-book gem which utilizes the deprecated Google Books API, but is updated to hook into the current Google API.
-
-Though Gbooks provides access to the majority of relevant attributes provided by Google Books, it is not entirely comprehensive.
+Gbooks is a lightweight wrapper for Google Book Search on Rails. It is inspired by the [google-book](https://github.com/papercavalier/google-book) gem which relies on the deprecated Google Book Search Data API](http://code.google.com/apis/books/docs/gdata/developers_guide_protocol.html), but is updated to hook into the current Google API.
 
 By default, Gbooks can query the following attributes:
 
