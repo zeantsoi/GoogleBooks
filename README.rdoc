@@ -12,7 +12,7 @@ http://www.google.com/support/forum/p/booksearch-apis/thread?tid=2034bed9a98c15c
 
 Gbooks can circumvent these issues by adding an X-Forwarded-For HTTP header to each request that contains the IP address of the user. In most cases, you can pass the user's IP address in your search request:
 
-	Gbooks.search("Search Query", {options}, request.remote_ip)
+  Gbooks.search("Search Query", {options}, request.remote_ip)
 
 Doing this will, for the most part, enable you to query the Google API from apps that reside on Heroku servers.
 
