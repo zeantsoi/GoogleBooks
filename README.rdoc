@@ -1,3 +1,21 @@
+== Gbooks
+
+Gbooks is a lightweight wrapper for Google Book Search on Rails. It is inspired by the google-book gem which utilizes the deprecated Google Books API, but is updated to hook into the current Google API.
+
+Though Gbooks provides access to the majority of relevant attributes provided by Google Books, it is not entirely comprehensive.
+
+=== Support for distributed clustering
+
+The current Google API for Books requires generally that a users IP address be geolocatable. This can cause responses to be restricted when requested from distributed/clustered servers such as Heroku.
+
+http://www.google.com/support/forum/p/booksearch-apis/thread?tid=2034bed9a98c15cb&hl=en
+
+Gbooks can circumvent these issues by adding an X-Forwarded-For HTTP header to each request that contains the IP address of the user. In most cases, you can pass the user's IP address in your search request:
+
+	Gbooks.search("Search Query", {options}, request.remote_ip)
+
+Doing this will, for the most part, enable you to query the Google API from apps that reside on Heroku servers.
+
 == Devise
 
 {<img src="https://secure.travis-ci.org/plataformatec/devise.png" />}[http://travis-ci.org/plataformatec/devise]
