@@ -8,6 +8,8 @@ module GoogleBooks
       @response = response
     end
 
+    # Returns nil if no records are returned. Otherwise, response returns
+    # hash of generally unusable Google API specific data.
     def each(&block)
       return [] if total_items == 0
       @response['items'].each do |item|
@@ -15,6 +17,8 @@ module GoogleBooks
       end
     end
     
+    # Total items returnable based on query, not total items in response
+    # (which is throttled by maxResults)
     def total_items
       @response['totalItems'].to_i
     end

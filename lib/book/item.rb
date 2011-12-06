@@ -9,8 +9,12 @@ module GoogleBooks
       retrieve_attribute
     end
     
-    def image_link(zoom = 1, edge = "none")
-     	@volume_info['imageLinks']['thumbnail'].gsub('zoom=1', "zoom=#{zoom}").gsub('&edge=curl', "&edge=#{edge}") rescue nil
+    # Enables image_link attribute to be customized via passing
+    # optional zoom and edge arguments as a hash
+    def image_link(opts = {})
+    	opts[:zoom] ||= 1
+    	opts[:curl] ||= false
+     	@volume_info['imageLinks']['thumbnail'].gsub('zoom=1', "zoom=#{opts[:zoom]}").gsub('&edge=curl', "&edge=#{opts[:curl] ? 'curl' : 'none'}") rescue nil
     end
 
   private

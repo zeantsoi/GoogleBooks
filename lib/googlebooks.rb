@@ -1,31 +1,31 @@
 require "googlebooks/version"
-
-require "googlebooks/version"
-
 require 'book/response'
 
 require 'httparty'
 require 'cgi'
 
 module GoogleBooks
-  # A simple wrapper around the Google Book Search API.
 
   include HTTParty
   format :json
   
   class << self
 
-    # The search parameters.
     attr_accessor :parameters
 
-    # Queries the Google Book Search Data API. Takes a query string and an
-    # optional options hash.
-    #
-    # The options hash respects the following members:
-    #
-    # * `:page`, which specifies the page.
-    #
-    # * `:count`, which specifies the number of results per page.
+    # Submits query to the current Google API for Books.
+		#
+    # 1st param passes all varieties of acceptable query strings
+		#
+    # 2nd param passes options hash:
+    # * :count passes number of results to display per page (default=5)
+    # * :page passes the page number (default=1)
+		#
+    # 3rd parameter optionally passes user's IP address
+    # * User IP may be require in order for request to be made to the
+    #   Google API from applications residing on decentralized cloud servers
+    #   See http://www.google.com/support/forum/p/booksearch-apis/thread?tid=2034bed9a98c15cb&hl=en
+
     def search(query, opts = {}, remote_ip = nil)
       (headers 'X-Forwarded-For' => remote_ip.to_s) unless remote_ip.nil?
       self.parameters = { 'q' => query }
@@ -45,6 +45,8 @@ module GoogleBooks
         join('&')
     end
 
+    # Queries the new Google API. The former Google Book Search API is deprecated
+    # http://code.google.com/apis/books/docs/gdata/developers_guide_protocol.html
     def url
       URI::HTTPS.build(:host  => 'www.googleapis.com',
                       :path  => '/books/v1/volumes',
