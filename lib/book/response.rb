@@ -1,6 +1,6 @@
 require 'book/item'
 
-module Gbooks
+module GoogleBooks
   class Response
     include Enumerable
 
@@ -9,7 +9,8 @@ module Gbooks
     end
 
     def each(&block)
-      items.each do |item|
+      return [] if total_items == 0
+      @response['items'].each do |item|
         block.call(Item.new(item))
       end
     end
@@ -18,10 +19,5 @@ module Gbooks
       @response['totalItems'].to_i
     end
 
-    private
-
-    def items
-      total_items == 0 ? [] : [@response['items']].flatten
-    end
   end
 end
