@@ -1,4 +1,4 @@
-require "googlebooks/version"
+require 'version'
 require 'book/response'
 
 require 'httparty'
