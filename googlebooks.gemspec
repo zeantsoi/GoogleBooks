@@ -7,9 +7,10 @@ Gem::Specification.new do |s|
   s.version     = GoogleBooks::VERSION
   s.authors     = ["Zean Tsoi"]
   s.email       = ["zean.tsoi@gmail.com"]
-  s.homepage    = ""
-  s.summary     = %q{Wrapper for Google Books via the Google API}
-  s.description = %q{Replaces the deprecated Google Books API. Provides support for distributed server networks such as Heroku.}
+  s.homepage    = "https://github.com/zeantsoi/googlebooks"
+  s.summary     = %q{GoogleBooks is a lightweight Ruby wrapper that queries the Google API to search for publications in the Google Books repository.}
+ 
+  s.description = %q{GoogleBooks is a lightweight Ruby wrapper that queries the Google API to search for publications in the Google Books repository. It is inspired by the google-book gem which relies on the deprecated Google GData Books API, but is updated to hook into the current Google API.}
 
   s.rubyforge_project = "googlebooks"
 
