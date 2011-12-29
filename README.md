@@ -3,7 +3,7 @@ GoogleBooks
 
 GoogleBooks is a lightweight Ruby wrapper that queries the Google API to search for publications in the Google Books repository.
 
-It is inspired by the [google-book](https://github.com/papercavalier/google-book) gem which relies on the deprecated [Google GData Books API](http://code.google.com/apis/books/docs/gdata/developers_guide_protocol.html), but is updated to hook into the current Google API.
+It is inspired by the [google-book](https://github.com/papercavalier/google-book) gem which relies on the deprecated [Google GData Books API](http://code.google.com/apis/books/docs/gdata/developers_guide_protocol.html), but is updated to hook into the current Google API and expanded to provide additional methods and search options.
 
 Basic Usage
 -----------
