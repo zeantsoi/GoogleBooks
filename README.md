@@ -23,7 +23,7 @@ Using GoogleBooks is simple. There's just one class, `GoogleBooks`, and one meth
 Options Hash
 -----------
 
-The `search` method allows for an options hash of up to three parameters. These parameters are `page`, `count`, and `api_key`. Necessity of a Google API key is application dependent; further information is available in [Google's API documentation](http://code.google.com/apis/books/docs/v1/using.html).
+The `search` method allows for an options hash of up to three parameters. These parameters are `page`, `count`, and `api_key`. Necessity of a Google API key is application dependent; further information is available in [Google's API documentation](http://code.google.com/apis/books/docs/v1/using.htmlj).
 
     require 'googlebooks'
     
