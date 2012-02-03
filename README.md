@@ -27,11 +27,14 @@ The `search` method allows for an options hash of up to three parameters. These 
 
     require 'googlebooks'
     
-    GoogleBooks.search('The Great Gatsby', {:count => 10}) #=> returns first ten results (default = 5)
+    GoogleBooks.search('The Great Gatsby', {:count => 10}) 
+    #=> returns first ten results (default = 5)
    
-    GoogleBooks.search('The Great Gatsby', {:page => 2}) #=> returns second page of results (default = 1)
+    GoogleBooks.search('The Great Gatsby', {:page => 2}) 
+    #=> returns second page of results (default = 1)
     
-    GoogleBooks.search('The Great Gatsby', {:count => 3, :page => 4, :api_key => 'THIS_IS_YOUR_API_KEY'}) #=> returns three results, beginning with the 10th overall result
+    GoogleBooks.search('The Great Gatsby', {:count => 3, :page => 4, :api_key => 'THIS_IS_YOUR_API_KEY'}) 
+    #=> returns three results, beginning with the 10th overall result
 
 Special Keywords
 ----------------
