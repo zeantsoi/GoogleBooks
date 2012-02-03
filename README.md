@@ -19,6 +19,20 @@ Using GoogleBooks is simple. There's just one class, `GoogleBooks`, and one meth
     first_book.isbn #=> '9781443411080'
     first_book.image_link(:zoom => 6) #=> 'http://bks2.books.google.com/books?id=...'
     
+
+Options Hash
+-----------
+
+The `search` method allows for an options hash of up to three parameters. These parameters are `page`, `count`, and `api_key`. Necessity of a Google API key is application dependent; further information is available in [Google's API documentation](http://code.google.com/apis/books/docs/v1/using.html#ids).
+
+    require 'googlebooks'
+    
+    GoogleBooks.search('The Great Gatsby', {:count => 10}) #=> returns first ten results (default = 5)
+   
+    GoogleBooks.search('The Great Gatsby', {:page => 2}) #=> returns second page of results (default = 1)
+    
+    GoogleBooks.search('The Great Gatsby', {:count => 3, :page => 4, :api_key => 'THIS_IS_YOUR_API_KEY'}) #=> returns three results, beginning with the 10th overall result
+
 Special Keywords
 ----------------
 

@@ -20,19 +20,21 @@ module GoogleBooks
     # 2nd param passes options hash:
     # * :count passes number of results to display per page (default=5)
     # * :page passes the page number (default=1)
+    # * :api_key passes the application specific Google API key
 		#
     # 3rd parameter optionally passes user's IP address
     # * User IP may be require in order for request to be made to the
     #   Google API from applications residing on decentralized cloud servers
     #   See http://www.google.com/support/forum/p/booksearch-apis/thread?tid=2034bed9a98c15cb&hl=en
 
-    def search(query, opts = {}, remote_ip = nil)
+    def search(query, options = {}, remote_ip = nil)
       (headers 'X-Forwarded-For' => remote_ip.to_s) unless remote_ip.nil?
       self.parameters = { 'q' => query }
-      opts[:page] ||= 1
-      opts[:count] ||= 5
-      parameters['startIndex'] = opts[:count] * (opts[:page] - 1)
-      parameters['maxResults'] = opts[:count]
+      options[:page] ||= 1
+      options[:count] ||= 5
+      parameters['startIndex'] = options[:count] * (options[:page] - 1)
+      parameters['maxResults'] = options[:count]
+      parameters['key'] = options[:api_key] if options[:api_key]
 
       Response.new(get(url.to_s))
     end
