@@ -23,7 +23,7 @@ Using GoogleBooks is simple. There's just one class, `GoogleBooks`, and one meth
 Options Hash
 -----------
 
-The `search` method allows for an options hash of up to three parameters. These parameters are `page`, `count`, and `api_key`. Necessity of a Google API key is application dependent; further information is available in [Google's API documentation](http://code.google.com/apis/books/docs/v1/using.html).
+The `search` method allows for an options hash of up to four parameters. These parameters are `page`, `count`, `order_by`, and `api_key`. Necessity of a Google API key is application dependent; further information is available in [Google's API documentation](http://code.google.com/apis/books/docs/v1/using.html).
 
     require 'googlebooks'
     
@@ -35,6 +35,15 @@ The `search` method allows for an options hash of up to three parameters. These 
     
     GoogleBooks.search('The Great Gatsby', {:count => 3, :page => 4, :api_key => 'THIS_IS_YOUR_API_KEY'}) 
     #=> returns three results, beginning with the 10th overall result
+
+By default, results are returned in order of relevance. However, results also be ordered from most recently to least recently published by passing `newest` to the `order_by` key. Passing anything other than `newest` will return results by relevance. Google [does not currently support](https://groups.google.com/a/googleproductforums.com/forum/#!searchin/books/publication$20date/books/wKuq9TLGYsc/SRIk-YiiPHQJ) querying any values other than `relevance` and `newest`.
+
+    GoogleBooks.search('The Great Gatsby', {:order_by => 'newest'})
+    #=> returns results in order of most recently to least recently published
+    
+    GoogleBooks.search('The Great Gatsby')
+    GoogleBooks.search('The Great Gatsby', {:order_by => `ANYTHING ELSE`})
+    #=> both return results in order of relevance
 
 Special Keywords
 ----------------
