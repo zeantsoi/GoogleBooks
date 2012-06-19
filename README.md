@@ -88,6 +88,21 @@ By default, GoogleBooks can query the following attributes (note that not all at
 * `info_link`
 * `image_link` *See details below*
 
+Sale and retail information is available on some volumes as of Google Books API v1. GoogleBooks returns a hash of these attributes (where available) under the `sale_info` attribute.
+
+    book = GoogleBooks.search(9780345508553).first # Do Androids Dream of Electric Sheep?
+   
+    book['country'] #=> 'US'
+    book['saleability'] #=> 'FOR_SALE'
+    book['isEbook'] #=> true
+    book['listPrice']['amount'] #=> 9.99
+    book['listPrice']['currencyCode'] #=> 'USD'
+    book['retailPrice']['amount'] #=> 9.99
+    book['retailPrice']['currencyCode'] #=> 'USD'
+    book['buyLink'] #=> 'http://books.google.com/books?id=jUX8N9kiCiQC&dq=9780345508553&buy=&source=gbs_api'
+   
+Note that the `sale_info` attribute is only available for some volumes and will sometimes return `nil` for nested attributes. Use with caution as GoogleBooks does not provide built-in error handling for instances of `nil`.
+
 Image Links
 -----------
 

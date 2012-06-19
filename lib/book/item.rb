@@ -1,7 +1,7 @@
 module GoogleBooks
 
   class Item
-    attr_reader :kind, :id, :title, :authors, :publisher, :published_date, :description, :isbn, :isbn_10, :isbn_13, :page_count, :print_type, :categories, :average_rating, :ratings_count, :language, :preview_link, :info_link
+    attr_reader :kind, :id, :title, :authors, :publisher, :published_date, :description, :isbn, :isbn_10, :isbn_13, :page_count, :print_type, :categories, :average_rating, :ratings_count, :language, :preview_link, :info_link, :sale_info
 
     def initialize(item)
       @item = item
@@ -38,6 +38,7 @@ module GoogleBooks
 			@language = @volume_info['language']
 			@preview_link = @volume_info['previewLink']
 			@info_link = @volume_info['infoLink']
+      @sale_info = @item['saleInfo']
    	end
    	
    	def build_title
