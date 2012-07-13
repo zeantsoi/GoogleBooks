@@ -112,29 +112,29 @@ The size of this image is configurable by passing an numerical argument between 
 
 * `:zoom` *Pass numeric value between 1-6 to the zoom attribute* (default = 1)
 
-GoogleBooks will, by default, return the image_url for an aesthetically unmodified cover. However, if you'd like Google to return an image with a "curled" corner (when available), you can pass true to this key. 
+GoogleBooks will, by default, return the image_link for an aesthetically unmodified cover. However, if you'd like Google to return an image with a "curled" corner (when available), you can pass true to this key. 
 
-* `:curl` *Pass true to return image_url of cover with curled corner* (default = false)
+* `:curl` *Pass true to return image_link of cover with curled corner* (default = false)
 
 Examples:
     
     book = GoogleBooks.search("The Great Gatsby").first
     
-    # return image_url with default options
-    book.image_url # zoom=1, edge=none
+    # return image_link with default options
+    book.image_link # zoom=1, edge=none
     
-    # return image_url of varying sizes
-    book.image_url # small
-    book.image_url(:zoom => 5) # thumbnail
-    book.image_url(:zoom => 2) # medium
-    book.image_url(:zoom => 3) # large
-    book.image_url(:zoom => 4) # extra large
+    # return image_link of varying sizes
+    book.image_link # small
+    book.image_link(:zoom => 5) # thumbnail
+    book.image_link(:zoom => 2) # medium
+    book.image_link(:zoom => 3) # large
+    book.image_link(:zoom => 4) # extra large
     
-    # return image_url with curled corners
-    book.image_url(:curl => true)
+    # return image_link with curled corners
+    book.image_link(:curl => true)
     
-    # return thumbnail image_url with curled corners
-    book.image_url(:zoom => 5, :curl => true)
+    # return thumbnail image_link with curled corners
+    book.image_link(:zoom => 5, :curl => true)
   
 Support for distributed production servers
 ------------------------------------------
