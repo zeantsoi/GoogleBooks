@@ -41,9 +41,8 @@ module GoogleBooks
         end
         
         it "should default to 'edge=none' and curl when dictated" do
-          book = GoogleBooks.search("isbn:9781443411080").first
-          book.image_link.should include "edge=none"
-          book.image_link(:curl => true).should include "edge=curl"
+          example.image_link.should include "edge=none"
+          example.image_link(:curl => true).should include "edge=curl"
         end
       end
       

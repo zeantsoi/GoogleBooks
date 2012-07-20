@@ -16,9 +16,10 @@ Gem::Specification.new do |s|
 
   s.add_dependency('httparty')
   s.add_development_dependency('rspec')
+  s.add_development_dependency('webmock')
   
-  #s.files         = `git ls-files`.split("\n")
-  s.files         = Dir["{lib}/**/*", "googlebooks.gemspec", "Gemfile", "Rakefile"]
+  s.files         = `git ls-files`.split("\n")
+  #s.files         = Dir["{lib}/**/*", "googlebooks.gemspec", "Gemfile", "Rakefile"]
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]

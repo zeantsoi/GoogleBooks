@@ -3,8 +3,8 @@ require 'spec_helper'
 describe GoogleBooks do
   describe "#search" do
     it "should escape spaces" do
-      GoogleBooks.search('damien white')
-      GoogleBooks.send(:query).should include 'q=damien+white'
+      GoogleBooks.search('the great gatsby')
+      GoogleBooks.send(:query).should include 'q=the+great+gatsby'
     end
 
 		describe 'startIndex' do
@@ -23,21 +23,18 @@ describe GoogleBooks do
 		    GoogleBooks.send(:query).should include 'startIndex=24'
 		  end
 		  
-		  it "should default to 0 page number isnt specified by count is" do
-		  	GoogleBooks.search('the great gatsby', :count => 15)
-		  end
 		end
 
     it "should set the number of results per page" do
-      GoogleBooks.search('damien white', :count => 20)
+      GoogleBooks.search('the great gatsby', :count => 20)
       GoogleBooks.send(:query).should include 'maxResults=20'
     end
     
     it "should join parameters" do
-      GoogleBooks.search('damien white', :count => 20, :page => 2)
+      GoogleBooks.search('the great gatsby', :count => 20, :page => 2)
       GoogleBooks.send(:query).should include 'startIndex=2'
       GoogleBooks.send(:query).should include 'maxResults=20'
-      GoogleBooks.send(:query).should include 'q=damien+white'
+      GoogleBooks.send(:query).should include 'q=the+great+gatsby'
       GoogleBooks.send(:query).count('&').should eq 2 
     end
     
@@ -47,7 +44,7 @@ describe GoogleBooks do
     end
 
     it "should return a response" do
-      GoogleBooks.search('foo bar').should be_a GoogleBooks::Response
+      GoogleBooks.search('the great gatsby').should be_a GoogleBooks::Response
     end
   end
 end
