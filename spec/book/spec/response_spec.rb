@@ -15,7 +15,7 @@ module GoogleBooks
 
     context "when there is a single match" do
       it "should return entries" do
-        GoogleBooks.search('9780826490780').first.should be_an Item
+        GoogleBooks.search('9781443411080').first.should be_an Item
       end
     end
 

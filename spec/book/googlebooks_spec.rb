@@ -42,7 +42,7 @@ describe GoogleBooks do
     end
     
     it "should return the proper number results based on the count passed in" do
-      results = GoogleBooks.search('damien white', :count => 20)
+      results = GoogleBooks.search('F. Scott Fitzgerald', :count => 20)
       results.count.should eq 20
     end
 
