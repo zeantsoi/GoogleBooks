@@ -1,7 +1,7 @@
 module GoogleBooks
 
   class Item
-    attr_reader :kind, :id, :title, :authors, :publisher, :published_date, :description, :isbn, :isbn_10, :isbn_13, :page_count, :print_type, :categories, :average_rating, :ratings_count, :language, :preview_link, :info_link, :sale_info
+    attr_reader :kind, :id, :title, :authors, :publisher, :published_date, :description, :isbn, :isbn_10, :isbn_13, :other_identifier, :page_count, :print_type, :categories, :average_rating, :ratings_count, :language, :preview_link, :info_link, :sale_info
 
     def initialize(item)
       @item = item
@@ -28,12 +28,19 @@ module GoogleBooks
     	@published_date = @volume_info['publishedDate']
     	@description = @volume_info['description']
 
+      # ISBN_13
     	@isbn = @volume_info['industryIdentifiers'][1]['identifier'] rescue nil
-    	@isbn_10 = @volume_info['industryIdentifiers'].find {|identifier_hash|
+      @isbn_13 = @isbn
+
+      # ISBN_10
+      @isbn_10 = @volume_info['industryIdentifiers'].find {|identifier_hash|
         identifier_hash['type'] == "ISBN_10"
       }['identifier'] rescue nil
-    	@isbn_13 = @isbn
 
+      # OTHER_IDENTIFIER
+      @other_identifier = @volume_info['industryIdentifiers'].find {|identifier_hash|
+        identifier_hash['type'] == "OTHER"
+      }['identifier'] rescue nil
 
     	@page_count = @volume_info['pageCount']
     	@print_type = @volume_info['printType']
