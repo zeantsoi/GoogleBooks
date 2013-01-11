@@ -8,7 +8,7 @@ module GoogleBooks
       @volume_info = @item['volumeInfo']
       retrieve_attribute
     end
-    
+
     # Enables image_link attribute to be customized via passing
     # optional zoom and edge arguments as a hash
     def image_link(opts = {})
@@ -18,7 +18,7 @@ module GoogleBooks
     end
 
   private
-  	
+
   	def retrieve_attribute
     	@kind = @item['kind']
     	@id = @item['id']
@@ -27,9 +27,14 @@ module GoogleBooks
     	@publisher = @volume_info['publisher']
     	@published_date = @volume_info['publishedDate']
     	@description = @volume_info['description']
+
     	@isbn = @volume_info['industryIdentifiers'][1]['identifier'] rescue nil
-    	@isbn_10 = @volume_info['industryIdentifiers'][0]['identifier'] rescue nil
+    	@isbn_10 = @volume_info['industryIdentifiers'].find {|identifier_hash|
+        identifier_hash['type'] == "ISBN_10"
+      }['identifier'] rescue nil
     	@isbn_13 = @isbn
+
+
     	@page_count = @volume_info['pageCount']
     	@print_type = @volume_info['printType']
     	@categories = [@volume_info['categories']].flatten.join(', ')
@@ -40,7 +45,7 @@ module GoogleBooks
 			@info_link = @volume_info['infoLink']
       @sale_info = @item['saleInfo']
    	end
-   	
+
    	def build_title
    		title = [@volume_info['title']].flatten.join(': ')
 			@volume_info['subtitle'].nil? ? title : title + ": " + @volume_info['subtitle']
