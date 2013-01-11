@@ -28,19 +28,7 @@ module GoogleBooks
     	@published_date = @volume_info['publishedDate']
     	@description = @volume_info['description']
 
-      # ISBN_13
-    	@isbn = @volume_info['industryIdentifiers'][1]['identifier'] rescue nil
-      @isbn_13 = @isbn
-
-      # ISBN_10
-      @isbn_10 = @volume_info['industryIdentifiers'].find {|identifier_hash|
-        identifier_hash['type'] == "ISBN_10"
-      }['identifier'] rescue nil
-
-      # OTHER_IDENTIFIER
-      @other_identifier = @volume_info['industryIdentifiers'].find {|identifier_hash|
-        identifier_hash['type'] == "OTHER"
-      }['identifier'] rescue nil
+      retrieve_industry_identifiers
 
     	@page_count = @volume_info['pageCount']
     	@print_type = @volume_info['printType']
@@ -57,6 +45,25 @@ module GoogleBooks
    		title = [@volume_info['title']].flatten.join(': ')
 			@volume_info['subtitle'].nil? ? title : title + ": " + @volume_info['subtitle']
 		end
+
+    def retrieve_industry_identifiers
+
+      return unless @volume_info['industryIdentifiers']
+
+      @volume_info['industryIdentifiers'].each do |identifier_hash|
+        identifier = identifier_hash["identifier"]
+
+        case identifier_hash['type']
+        when "ISBN_13"
+          @isbn = @isbn_13 = identifier
+        when "ISBN_10"
+          @isbn_10 = identifier
+        when "OTHER"
+          @other_identifier = identifier
+        end
+      end
+
+    end
   end
 
 end
