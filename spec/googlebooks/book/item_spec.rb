@@ -59,16 +59,11 @@ module GoogleBooks
               }
             }
           }
+          let(:item) { Item.new google_book_item }
+          subject { item }
 
-          it "its isbn_10 attribute should be nil" do
-            item = Item.new google_book_item
-            item.isbn_10.should be_nil
-          end
-
-          it "should set the other_identifier attribute" do
-            item = Item.new google_book_item
-            item.other_identifier.should == "GENT:900000054512"
-          end
+          its(:isbn_10) { should be_nil }
+          its(:other_identifier) { should == "GENT:900000054512" }
         end
       end
 
