@@ -15,7 +15,7 @@ Using GoogleBooks is simple. There's just one class, `GoogleBooks`, and one meth
     books = GoogleBooks.search('The Great Gatsby')
     first_book = book.first
     
-    first_book.author #=> 'F. Scott Fitzgerald'
+    first_book.authors #=> 'F. Scott Fitzgerald'
     first_book.isbn #=> '9781443411080'
     first_book.image_link(:zoom => 6) #=> 'http://bks2.books.google.com/books?id=...'
     
