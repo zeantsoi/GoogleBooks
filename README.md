@@ -13,7 +13,7 @@ Using GoogleBooks is simple. There's just one class, `GoogleBooks`, and one meth
     require 'googlebooks' # unless you're using Bundler
     
     books = GoogleBooks.search('The Great Gatsby')
-    first_book = book.first
+    first_book = books.first
     
     first_book.author #=> 'F. Scott Fitzgerald'
     first_book.isbn #=> '9781443411080'
