@@ -45,6 +45,21 @@ By default, results are returned in order of relevance. However, results also be
     GoogleBooks.search('The Great Gatsby', {:order_by => `ANYTHING ELSE`})
     #=> both return results in order of relevance
 
+Filtering
+----------------
+
+You can use the filter parameter to restrict the returned results further by setting it the to one of the following values:
+
+* `partial` *Returns results where at least parts of the text are previewable.*
+* `full` *Only returns results where all of the text is viewable.*
+* `free-ebooks` *Only returns results that are free Google eBooks.*
+* `paid-ebooks` *Only returns results that are Google eBooks with a price.*
+* `ebooks` *Only returns results that are Google eBooks, paid or free. Examples of non-eBooks would be publisher content that is available in limited preview and not for sale, or magazines.*
+
+Examples:
+
+    GoogleBooks.search('ruby', :filter => 'free-ebooks')
+
 Special Keywords
 ----------------
 
