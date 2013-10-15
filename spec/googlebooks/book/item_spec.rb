@@ -14,6 +14,10 @@ module GoogleBooks
         example.authors.should eq "Steven D. Levitt, Stephen J. Dubner"
       end
 
+      it "should return an array of author names" do
+        example.author_names.should eq ["Steven D. Levitt", "Stephen J. Dubner"]
+      end
+
       it "should have an isbn that is 13 digits" do
         example.isbn.should_not eq nil
         example.isbn.should eq '9780062132345'
