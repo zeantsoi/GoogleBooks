@@ -10,6 +10,10 @@ module GoogleBooks
         example.title.should eq "Freakonomics: A Rogue Economist Explores the Hidden Side of Everything"
       end
 
+      it "should return an array of all titles" do
+        example.all_titles.should eq ["Freakonomics", "A Rogue Economist Explores the Hidden Side of Everything"]
+      end
+
       it "should return a string authors delineated by a comma" do
         example.authors.should eq "Steven D. Levitt, Stephen J. Dubner"
       end

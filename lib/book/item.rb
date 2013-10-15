@@ -1,7 +1,7 @@
 module GoogleBooks
 
   class Item
-    attr_reader :kind, :id, :title, :authors, :author_names, :publisher, :published_date, :description, :isbn, :isbn_10, :isbn_13, :other_identifier, :page_count, :print_type, :categories, :average_rating, :ratings_count, :language, :preview_link, :info_link, :sale_info
+    attr_reader :kind, :id, :title, :all_titles, :authors, :author_names, :publisher, :published_date, :description, :isbn, :isbn_10, :isbn_13, :other_identifier, :page_count, :print_type, :categories, :average_rating, :ratings_count, :language, :preview_link, :info_link, :sale_info
 
     def initialize(item)
       @item = item
@@ -23,6 +23,7 @@ module GoogleBooks
       @kind = @item['kind']
       @id = @item['id']
       @title = build_title
+      @all_titles = [@volume_info['title'], @volume_info['subtitle']].compact
       @authors = [@volume_info['authors']].flatten.join(', ')
       @author_names = [@volume_info['authors']].flatten
       @publisher = @volume_info['publisher']
