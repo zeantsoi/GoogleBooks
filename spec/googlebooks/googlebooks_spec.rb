@@ -30,12 +30,18 @@ describe GoogleBooks do
       GoogleBooks.send(:query).should include 'maxResults=20'
     end
     
+    it "should set the country" do
+      GoogleBooks.search('the great gatsby', :country => "ca")
+      GoogleBooks.send(:query).should include 'country=ca'
+    end
+    
     it "should join parameters" do
-      GoogleBooks.search('the great gatsby', :count => 20, :page => 2)
+      GoogleBooks.search('the great gatsby', :count => 20, :page => 2, :country => "ca")
       GoogleBooks.send(:query).should include 'startIndex=2'
       GoogleBooks.send(:query).should include 'maxResults=20'
       GoogleBooks.send(:query).should include 'q=the+great+gatsby'
-      GoogleBooks.send(:query).count('&').should eq 2 
+      GoogleBooks.send(:query).should include 'country=ca'
+      GoogleBooks.send(:query).count('&').should eq 3 
     end
     
     it "should return the proper number results based on the count passed in" do
