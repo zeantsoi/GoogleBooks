@@ -36,6 +36,7 @@ module GoogleBooks
       parameters['maxResults'] = options[:count]
       parameters['key'] = options[:api_key] if options[:api_key]
       parameters['orderBy'] = 'newest' if options[:order_by].eql?('newest')
+      parameters['country'] = options[:country]
 
       Response.new(get(url.to_s))
     end
