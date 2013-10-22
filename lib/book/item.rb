@@ -1,7 +1,7 @@
 module GoogleBooks
 
   class Item
-    attr_reader :kind, :id, :title, :authors, :publisher, :published_date, :description, :isbn, :isbn_10, :isbn_13, :other_identifier, :page_count, :print_type, :categories, :average_rating, :ratings_count, :language, :preview_link, :info_link, :sale_info
+    attr_reader :kind, :id, :title, :all_titles, :authors, :author_names, :publisher, :published_date, :description, :isbn, :isbn_10, :isbn_13, :other_identifier, :page_count, :print_type, :categories, :average_rating, :ratings_count, :language, :preview_link, :info_link, :sale_info
 
     def initialize(item)
       @item = item
@@ -12,39 +12,41 @@ module GoogleBooks
     # Enables image_link attribute to be customized via passing
     # optional zoom and edge arguments as a hash
     def image_link(opts = {})
-    	opts[:zoom] ||= 1
-    	opts[:curl] ||= false
-     	@volume_info['imageLinks']['thumbnail'].gsub('zoom=1', "zoom=#{opts[:zoom]}").gsub('&edge=curl', "&edge=#{opts[:curl] ? 'curl' : 'none'}") rescue nil
+      opts[:zoom] ||= 1
+      opts[:curl] ||= false
+      @volume_info['imageLinks']['thumbnail'].gsub('zoom=1', "zoom=#{opts[:zoom]}").gsub('&edge=curl', "&edge=#{opts[:curl] ? 'curl' : 'none'}") rescue nil
     end
 
   private
 
-  	def retrieve_attribute
-    	@kind = @item['kind']
-    	@id = @item['id']
-    	@title = build_title
-    	@authors = [@volume_info['authors']].flatten.join(', ')
-    	@publisher = @volume_info['publisher']
-    	@published_date = @volume_info['publishedDate']
-    	@description = @volume_info['description']
+    def retrieve_attribute
+      @kind = @item['kind']
+      @id = @item['id']
+      @title = build_title
+      @all_titles = [@volume_info['title'], @volume_info['subtitle']].compact
+      @authors = [@volume_info['authors']].flatten.join(', ')
+      @author_names = [@volume_info['authors']].flatten
+      @publisher = @volume_info['publisher']
+      @published_date = @volume_info['publishedDate']
+      @description = @volume_info['description']
 
       retrieve_industry_identifiers
 
-    	@page_count = @volume_info['pageCount']
-    	@print_type = @volume_info['printType']
-    	@categories = [@volume_info['categories']].flatten.join(', ')
-			@average_rating = @volume_info['averageRating']
-			@ratings_count = @volume_info['ratingsCount']
-			@language = @volume_info['language']
-			@preview_link = @volume_info['previewLink']
-			@info_link = @volume_info['infoLink']
+      @page_count = @volume_info['pageCount']
+      @print_type = @volume_info['printType']
+      @categories = [@volume_info['categories']].flatten.join(', ')
+      @average_rating = @volume_info['averageRating']
+      @ratings_count = @volume_info['ratingsCount']
+      @language = @volume_info['language']
+      @preview_link = @volume_info['previewLink']
+      @info_link = @volume_info['infoLink']
       @sale_info = @item['saleInfo']
-   	end
+    end
 
-   	def build_title
-   		title = [@volume_info['title']].flatten.join(': ')
-			@volume_info['subtitle'].nil? ? title : title + ": " + @volume_info['subtitle']
-		end
+    def build_title
+      title = [@volume_info['title']].flatten.join(': ')
+      @volume_info['subtitle'].nil? ? title : title + ": " + @volume_info['subtitle']
+    end
 
     def retrieve_industry_identifiers
 
