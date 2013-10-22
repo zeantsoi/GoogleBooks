@@ -45,6 +45,22 @@ By default, results are returned in order of relevance. However, results also be
     GoogleBooks.search('The Great Gatsby', {:order_by => `ANYTHING ELSE`})
     #=> both return results in order of relevance
 
+Geolocation
+-----------
+
+Some users may experience issues when querying the Google API from IP addresses that cannot be geolocated by Google. From [this Google forum](http://productforums.google.com/d/msg/books-api/7FQ-622q-jI/XYaWyh-Tzl4J):
+
+> Unfortunately the Books API cannot return any results for IPs that we cannot geo-locate.  This is due to both legal and contractual reasons.  Google does not have the rights to display all the books in all countries.  Even public domain laws vary by country.
+
+Users experiencing issues can typically resolve this limitation by passing a valid country code to the `country` parameter in the URL query.
+
+    GoogleBooks.search('The Great Gatsby')
+    #=> "Cannot determine user location for geographically restricted operation."
+    
+    GoogleBooks.search('The Great Gatsby', {:country => "ca"}) 
+    #=> returns the first five results
+
+
 Special Keywords
 ----------------
 
@@ -71,7 +87,9 @@ Attributes
 By default, GoogleBooks can query the following attributes (note that not all attributes are available to all books):
 
 * `title`
+* `titles_array` *Returns an array of all titles, both main and alternative
 * `authors` *Returns all authors as a comma delimited string*
+* `authors_array` *Returns an array of all author names
 * `publisher`
 * `published_date`
 * `description`
