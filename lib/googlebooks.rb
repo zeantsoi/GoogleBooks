@@ -32,6 +32,7 @@ module GoogleBooks
       self.parameters = { 'q' => query }
       options[:page] ||= 1
       options[:count] ||= 5
+      parameters['filter'] = options[:filter] unless options[:filter].nil?
       parameters['startIndex'] = options[:count] * (options[:page] - 1)
       parameters['maxResults'] = options[:count]
       parameters['key'] = options[:api_key] if options[:api_key]

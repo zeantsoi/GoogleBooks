@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'rspec/its'
 
 module GoogleBooks
   class Item
@@ -7,50 +8,50 @@ module GoogleBooks
       example = GoogleBooks.search('isbn:9780062132345').first
 
       it "should append a subtitle to the title if it exists" do
-        example.title.should eq "Freakonomics: A Rogue Economist Explores the Hidden Side of Everything"
+        expect(example.title).to eq "Freakonomics: A Rogue Economist Explores the Hidden Side of Everything"
       end
 
       it "should return an array of all titles" do
-        example.titles_array.should include(*["Freakonomics", "A Rogue Economist Explores the Hidden Side of Everything"])
+        expect(example.titles_array).to include(*["Freakonomics", "A Rogue Economist Explores the Hidden Side of Everything"])
       end
 
       it "should return a string authors delineated by a comma" do
-        example.authors.should eq "Steven D. Levitt, Stephen J. Dubner"
+        expect(example.authors).to eq "Steven D. Levitt, Stephen J. Dubner"
       end
 
       it "should return an array of author names" do
-        example.authors_array.should include(*["Steven D. Levitt", "Stephen J. Dubner"])
+        expect(example.authors_array).to include(*["Steven D. Levitt", "Stephen J. Dubner"])
       end
 
       it "should have an isbn that is 13 digits" do
-        example.isbn.should_not eq nil
-        example.isbn.should eq '9780062132345'
-        example.isbn.to_s.length.should eq 13
+        expect(example.isbn).not_to eq nil
+        expect(example.isbn).to eq '9780062132345'
+        expect(example.isbn.to_s.length).to eq 13
       end
 
       it "should convert to a 10 digit isbn" do
-        example.isbn_10.should eq '0062132342'
+        expect(example.isbn_10).to eq '0062132342'
       end
 
       it "should make a 13 digit isbn duplicated from the default isbn" do
-        example.isbn_13.should eq '9780062132345'
-        example.isbn_13.should eq example.isbn
+        expect(example.isbn_13).to eq '9780062132345'
+        expect(example.isbn_13).to eq example.isbn
       end
 
       describe "image_link" do
         it "should have all zoom varieties and show 1 as a default" do
-          example.image_link.should include "zoom=1"
-          example.image_link(:zoom => 2).should include "zoom=2"
-          example.image_link(:zoom => 3).should include "zoom=3"
-          example.image_link(:zoom => 4).should include "zoom=4"
-          example.image_link(:zoom => 5).should include "zoom=5"
-          example.image_link(:zoom => 6).should include "zoom=6"
-          example.image_link(:zoom => 7).should include "zoom=7"
+          expect(example.image_link).to include "zoom=1"
+          expect(example.image_link(:zoom => 2)).to include "zoom=2"
+          expect(example.image_link(:zoom => 3)).to include "zoom=3"
+          expect(example.image_link(:zoom => 4)).to include "zoom=4"
+          expect(example.image_link(:zoom => 5)).to include "zoom=5"
+          expect(example.image_link(:zoom => 6)).to include "zoom=6"
+          expect(example.image_link(:zoom => 7)).to include "zoom=7"
         end
 
         it "should default to 'edge=none' and curl when dictated" do
-          example.image_link.should include "edge=none"
-          example.image_link(:curl => true).should include "edge=curl"
+          expect(example.image_link).to include "edge=none"
+          expect(example.image_link(:curl => true)).to include "edge=curl"
         end
 
         context "when google_book_item has no isbn_10 but one OTHER industry identifiers" do

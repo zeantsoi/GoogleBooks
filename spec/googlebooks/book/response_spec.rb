@@ -6,15 +6,15 @@ module GoogleBooks
     response = GoogleBooks.search('the great gatsby')
 
     it "should set total results" do
-      response.total_items.should > 0
+      expect(response.total_items).to be > 0
     end
 
     it "should return entries" do
-      response.first.should be_an Item
+      expect(response.first).to be_an Item
     end
 
     it "should handle an empty query" do
-      GoogleBooks.search('').to_a.should be_empty
+      expect(GoogleBooks.search('').to_a).to be_empty
     end
   end
 end
