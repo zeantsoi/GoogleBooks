@@ -7,23 +7,23 @@ describe GoogleBooks do
       expect(GoogleBooks.send(:query)).to include 'q=the+great+gatsby'
     end
 
-		describe 'startIndex' do
-		  it "should default to 0 if no page is specified" do
-		  	GoogleBooks.search('the great gatsby')
-		  	expect(GoogleBooks.send(:query)).to include 'startIndex=0'
-		  end
-		  
-		  it "should calculate based on default count of 5 if no count is given" do
-		  	GoogleBooks.search("the great gatsby", :page => 4)
-		  	expect(GoogleBooks.send(:query)).to include 'startIndex=15'
-		  end
-		  
-		  it "should set based on page number and count" do
-		    GoogleBooks.search('the great gatsby', {:page => 3, :count => 12})
-		    expect(GoogleBooks.send(:query)).to include 'startIndex=24'
-		  end
-		  
-		end
+    describe 'startIndex' do
+      it "should default to 0 if no page is specified" do
+        GoogleBooks.search('the great gatsby')
+        expect(GoogleBooks.send(:query)).to include 'startIndex=0'
+      end
+      
+      it "should calculate based on default count of 5 if no count is given" do
+        GoogleBooks.search("the great gatsby", :page => 4)
+        expect(GoogleBooks.send(:query)).to include 'startIndex=15'
+      end
+      
+      it "should set based on page number and count" do
+        GoogleBooks.search('the great gatsby', {:page => 3, :count => 12})
+        expect(GoogleBooks.send(:query)).to include 'startIndex=24'
+      end
+      
+    end
 
     it "should set the number of results per page" do
       GoogleBooks.search('the great gatsby', :count => 20)
@@ -33,6 +33,11 @@ describe GoogleBooks do
     it "should set the country" do
       GoogleBooks.search('the great gatsby', :country => "ca")
       expect(GoogleBooks.send(:query)).to include 'country=ca'
+    end
+
+    it "should not set the country when not defined" do
+      GoogleBooks.search('the great gatsby')
+      expect(GoogleBooks.send(:query)).not_to include 'country='
     end
     
     it "should join parameters" do
