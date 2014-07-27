@@ -14,14 +14,14 @@ module GoogleBooks
     attr_accessor :parameters
 
     # Submits query to the current Google API for Books.
-		#
+    #
     # 1st param passes all varieties of acceptable query strings
-		#
+    #
     # 2nd param passes options hash:
     # * :count passes number of results to display per page (default=5)
     # * :page passes the page number (default=1)
     # * :api_key passes the application specific Google API key
-		#
+    #
     # 3rd parameter optionally passes user's IP address
     # * User IP may be require in order for request to be made to the
     #   Google API from applications residing on decentralized cloud servers
@@ -37,7 +37,7 @@ module GoogleBooks
       parameters['maxResults'] = options[:count]
       parameters['key'] = options[:api_key] if options[:api_key]
       parameters['orderBy'] = 'newest' if options[:order_by].eql?('newest')
-      parameters['country'] = options[:country]
+      parameters['country'] = options[:country] if options[:country]
 
       Response.new(get(url.to_s))
     end
