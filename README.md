@@ -125,14 +125,14 @@ Sale and retail information is available on some volumes as of Google Books API 
 
     book = GoogleBooks.search(9780345508553).first # Do Androids Dream of Electric Sheep?
    
-    book['country'] #=> 'US'
-    book['saleability'] #=> 'FOR_SALE'
-    book['isEbook'] #=> true
-    book['listPrice']['amount'] #=> 9.99
-    book['listPrice']['currencyCode'] #=> 'USD'
-    book['retailPrice']['amount'] #=> 9.99
-    book['retailPrice']['currencyCode'] #=> 'USD'
-    book['buyLink'] #=> 'http://books.google.com/books?id=jUX8N9kiCiQC&dq=9780345508553&buy=&source=gbs_api'
+    book.sale_info['country'] #=> 'US'
+    book.sale_info['saleability'] #=> 'FOR_SALE'
+    book.sale_info['isEbook'] #=> true
+    book.sale_info['listPrice']['amount'] #=> 9.99
+    book.sale_info['listPrice']['currencyCode'] #=> 'USD'
+    book.sale_info['retailPrice']['amount'] #=> 9.99
+    book.sale_info['retailPrice']['currencyCode'] #=> 'USD'
+    book.sale_info['buyLink'] #=> 'http://books.google.com/books?id=jUX8N9kiCiQC&dq=9780345508553&buy=&source=gbs_api'
    
 Note that the `sale_info` attribute is only available for some volumes and will sometimes return `nil` for nested attributes. Use with caution as GoogleBooks does not provide built-in error handling for instances of `nil`.
 
