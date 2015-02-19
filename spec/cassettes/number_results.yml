@@ -1,0 +1,1571 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/volumes?maxResults=20&q=F.%20Scott%20Fitzgerald&startIndex=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Fri, 20 Feb 2015 16:33:06 GMT
+      Date:
+      - Fri, 20 Feb 2015 16:33:06 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"PHCkwOQosQs8w9BZDLmaoHrExzU/hBlHis9WMz7S_fsy4rj4fnXq7Q4"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '57947'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.08
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "books#volumes",
+         "totalItems": 867,
+         "items": [
+          {
+           "kind": "books#volume",
+           "id": "JgxOs2GX86AC",
+           "etag": "HMD4Yge93gg",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/JgxOs2GX86AC",
+           "volumeInfo": {
+            "title": "The Great Gatsby",
+            "authors": [
+             "F.Scott Fitzgerald"
+            ],
+            "publisher": "Interactive Media",
+            "publishedDate": "2012-02-14",
+            "description": "A social satire and a milestone in 20th century literature, 'The Great Gatsby' peels away the layers of the glamorous twenties in the U.S. to display the coldness and cruelty at its heart.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_13",
+              "identifier": "9781907832567"
+             },
+             {
+              "type": "ISBN_10",
+              "identifier": "1907832564"
+             }
+            ],
+            "readingModes": {
+             "text": true,
+             "image": true
+            },
+            "pageCount": 154,
+            "printType": "BOOK",
+            "categories": [
+             "Fiction"
+            ],
+            "averageRating": 4.0,
+            "ratingsCount": 519,
+            "contentVersion": "0.1.2.0.preview.3",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=JgxOs2GX86AC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=JgxOs2GX86AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=JgxOs2GX86AC&printsec=frontcover&dq=F.+Scott+Fitzgerald&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=JgxOs2GX86AC&dq=F.+Scott+Fitzgerald&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/The_Great_Gatsby.html?hl=&id=JgxOs2GX86AC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "FOR_SALE",
+            "isEbook": true,
+            "listPrice": {
+             "amount": 6.0,
+             "currencyCode": "USD"
+            },
+            "retailPrice": {
+             "amount": 4.62,
+             "currencyCode": "USD"
+            },
+            "buyLink": "http://books.google.com/books?id=JgxOs2GX86AC&dq=F.+Scott+Fitzgerald&hl=&buy=&source=gbs_api",
+            "offers": [
+             {
+              "finskyOfferType": 1,
+              "listPrice": {
+               "amountInMicros": 6000000.0,
+               "currencyCode": "USD"
+              },
+              "retailPrice": {
+               "amountInMicros": 4620000.0,
+               "currencyCode": "USD"
+              }
+             }
+            ]
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/The_Great_Gatsby-sample-epub.acsm?id=JgxOs2GX86AC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/The_Great_Gatsby-sample-pdf.acsm?id=JgxOs2GX86AC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=JgxOs2GX86AC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "A social satire and a milestone in 20th century literature, &#39;The Great Gatsby&#39; peels away the layers of the glamorous twenties in the U.S. to display the coldness and cruelty at its heart."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "7eIYh0PfXTsC",
+           "etag": "k1AgbWBVHbY",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/7eIYh0PfXTsC",
+           "volumeInfo": {
+            "title": "This Side of Paradise",
+            "authors": [
+             "Francis Scott Fitzgerald"
+            ],
+            "publisher": "Library of Alexandria",
+            "publishedDate": "1969",
+            "description": "Also includes The Last Tycoon.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_13",
+              "identifier": "9781465526229"
+             },
+             {
+              "type": "ISBN_10",
+              "identifier": "1465526226"
+             }
+            ],
+            "readingModes": {
+             "text": true,
+             "image": false
+            },
+            "pageCount": 156,
+            "printType": "BOOK",
+            "categories": [
+             "Advertising"
+            ],
+            "averageRating": 3.0,
+            "ratingsCount": 16,
+            "contentVersion": "1.2.2.0.preview.2",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=7eIYh0PfXTsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=7eIYh0PfXTsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=7eIYh0PfXTsC&printsec=frontcover&dq=F.+Scott+Fitzgerald&hl=&cd=2&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=7eIYh0PfXTsC&dq=F.+Scott+Fitzgerald&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/This_Side_of_Paradise.html?hl=&id=7eIYh0PfXTsC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "FOR_SALE",
+            "isEbook": true,
+            "listPrice": {
+             "amount": 3.99,
+             "currencyCode": "USD"
+            },
+            "retailPrice": {
+             "amount": 2.99,
+             "currencyCode": "USD"
+            },
+            "buyLink": "http://books.google.com/books?id=7eIYh0PfXTsC&dq=F.+Scott+Fitzgerald&hl=&buy=&source=gbs_api",
+            "offers": [
+             {
+              "finskyOfferType": 1,
+              "listPrice": {
+               "amountInMicros": 3990000.0,
+               "currencyCode": "USD"
+              },
+              "retailPrice": {
+               "amountInMicros": 2990000.0,
+               "currencyCode": "USD"
+              }
+             }
+            ]
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/This_Side_of_Paradise-sample-epub.acsm?id=7eIYh0PfXTsC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=7eIYh0PfXTsC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "Also includes The Last Tycoon."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "RISmLrJROEgC",
+           "etag": "IzfwR6o5x6Y",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/RISmLrJROEgC",
+           "volumeInfo": {
+            "title": "A Life in Letters",
+            "authors": [
+             "F. Scott Fitzgerald"
+            ],
+            "publisher": "Simon and Schuster",
+            "publishedDate": "2010-07-06",
+            "description": "A vibrant self-portrait of an artist whose work was his life. In this new collection of F. Scott Fitzgerald's letters, edited by leading Fitzgerald scholar and biographer Matthew J. Bruccoli, we see through his own words the artistic and emotional maturation of one of America's most enduring and elegant authors. A Life in Letters is the most comprehensive volume of Fitzgerald's letters -- many of them appearing in print for the first time. The fullness of the selection and the chronological arrangement make this collection the closest thing to an autobiography that Fitzgerald ever wrote. While many readers are familiar with Fitzgerald's legendary \"jazz age\" social life and his friendships with Ernest Hemingway, Gertrude Stein, Edmund Wilson, and other famous authors, few are aware of his writings about his life and his views on writing. Letters to his editor Maxwell Perkins illustrate the development of Fitzgerald's literary sensibility; those to his friend and competitor Ernest Hemingway reveal their difficult relationship. The most poignant letters here were written to his wife, Zelda, from the time of their courtship in Montgomery, Alabama, during World War I to her extended convalescence in a sanatorium near Asheville, North Carolina. Fitzgerald is by turns affectionate and proud in his letters to his daughter, Scottie, at college in the East while he was struggling in Hollywood. For readers who think primarily of Fitzgerald as a hard-drinking playboy for whom writing was effortless, these letters show his serious, painstaking concerns with creating realistic, durable art.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_13",
+              "identifier": "9781451602982"
+             },
+             {
+              "type": "ISBN_10",
+              "identifier": "1451602987"
+             }
+            ],
+            "readingModes": {
+             "text": true,
+             "image": false
+            },
+            "pageCount": 480,
+            "printType": "BOOK",
+            "categories": [
+             "Fiction"
+            ],
+            "averageRating": 4.0,
+            "ratingsCount": 5,
+            "contentVersion": "1.6.8.0.preview.2",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=RISmLrJROEgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=RISmLrJROEgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=RISmLrJROEgC&printsec=frontcover&dq=F.+Scott+Fitzgerald&hl=&cd=3&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=RISmLrJROEgC&dq=F.+Scott+Fitzgerald&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/A_Life_in_Letters.html?hl=&id=RISmLrJROEgC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "FOR_SALE",
+            "isEbook": true,
+            "listPrice": {
+             "amount": 15.99,
+             "currencyCode": "USD"
+            },
+            "retailPrice": {
+             "amount": 15.99,
+             "currencyCode": "USD"
+            },
+            "buyLink": "http://books.google.com/books?id=RISmLrJROEgC&dq=F.+Scott+Fitzgerald&hl=&buy=&source=gbs_api",
+            "offers": [
+             {
+              "finskyOfferType": 1,
+              "listPrice": {
+               "amountInMicros": 1.599E7,
+               "currencyCode": "USD"
+              },
+              "retailPrice": {
+               "amountInMicros": 1.599E7,
+               "currencyCode": "USD"
+              }
+             }
+            ]
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+            "epub": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/A_Life_in_Letters-sample-epub.acsm?id=RISmLrJROEgC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=RISmLrJROEgC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "In this new collection of F. Scott Fitzgerald&#39;s letters, edited by leading Fitzgerald scholar and biographer Matthew J. Bruccoli, we see through his own words the artistic and emotional maturation of one of America&#39;s most enduring and ..."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "z_MX6GlH1zwC",
+           "etag": "MSepWAnVwVc",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/z_MX6GlH1zwC",
+           "volumeInfo": {
+            "title": "F. Scott Fitzgerald in Context",
+            "authors": [
+             "Bryant Mangum"
+            ],
+            "publisher": "Cambridge University Press",
+            "publishedDate": "2013-03-18",
+            "description": "Explores many of the important social, historical and cultural contexts surrounding the life and works of F. Scott Fitzgerald.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_13",
+              "identifier": "9781107009196"
+             },
+             {
+              "type": "ISBN_10",
+              "identifier": "1107009197"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": true
+            },
+            "pageCount": 476,
+            "printType": "BOOK",
+            "categories": [
+             "Literary Criticism"
+            ],
+            "contentVersion": "0.2.0.0.preview.1",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=z_MX6GlH1zwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=z_MX6GlH1zwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=z_MX6GlH1zwC&printsec=frontcover&dq=F.+Scott+Fitzgerald&hl=&cd=4&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=z_MX6GlH1zwC&dq=F.+Scott+Fitzgerald&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/F_Scott_Fitzgerald_in_Context.html?hl=&id=z_MX6GlH1zwC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=z_MX6GlH1zwC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "Explores many of the important social, historical and cultural contexts surrounding the life and works of F. Scott Fitzgerald."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "3cpzvhTFm8cC",
+           "etag": "SUdE+KVoR0o",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/3cpzvhTFm8cC",
+           "volumeInfo": {
+            "title": "On Booze",
+            "authors": [
+             "Francis Scott Fitzgerald"
+            ],
+            "publisher": "New Directions Publishing",
+            "publishedDate": "2011",
+            "description": "A collection of F. Scott Fitzgerald's best drinking stories makes this the most intoxicating New Directions Pearl yet!",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "0811219267"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9780811219266"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": true
+            },
+            "pageCount": 86,
+            "printType": "BOOK",
+            "categories": [
+             "Fiction"
+            ],
+            "averageRating": 3.5,
+            "ratingsCount": 20,
+            "contentVersion": "0.1.0.0.preview.1",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=3cpzvhTFm8cC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=3cpzvhTFm8cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=3cpzvhTFm8cC&printsec=frontcover&dq=F.+Scott+Fitzgerald&hl=&cd=5&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=3cpzvhTFm8cC&dq=F.+Scott+Fitzgerald&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/On_Booze.html?hl=&id=3cpzvhTFm8cC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=3cpzvhTFm8cC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "A collection of F. Scott Fitzgerald&#39;s best drinking stories makes this the most intoxicating New Directions Pearl yet!"
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "KgIACQKYNqcC",
+           "etag": "R4mQXgWaX9o",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/KgIACQKYNqcC",
+           "volumeInfo": {
+            "title": "Tender is the Night",
+            "subtitle": "[The Modern Library ranked Tender Is the Night 28th on its list of the 100 best English-language novels of the 20th century.]",
+            "authors": [
+             "Francis Scott Fitzgerald"
+            ],
+            "publisher": "Starbooks Classics",
+            "publishedDate": "1962",
+            "description": "Accelerated reader ; RL 11.0.",
+            "readingModes": {
+             "text": true,
+             "image": false
+            },
+            "pageCount": 394,
+            "printType": "BOOK",
+            "categories": [
+             "Fiction"
+            ],
+            "averageRating": 3.5,
+            "ratingsCount": 1064,
+            "contentVersion": "1.1.1.0.preview.2",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=KgIACQKYNqcC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=KgIACQKYNqcC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=KgIACQKYNqcC&dq=F.+Scott+Fitzgerald&hl=&cd=6&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=KgIACQKYNqcC&dq=F.+Scott+Fitzgerald&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/Tender_is_the_Night.html?hl=&id=KgIACQKYNqcC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": true
+            },
+            "pdf": {
+             "isAvailable": true
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=KgIACQKYNqcC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "Accelerated reader ; RL 11.0."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "HABKH7i-7UUC",
+           "etag": "3bbngZfeo6s",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/HABKH7i-7UUC",
+           "volumeInfo": {
+            "title": "F. Scott Fitzgerald",
+            "subtitle": "Voice of the Jazz Age",
+            "authors": [
+             "Caroline Evensen Lazo"
+            ],
+            "publisher": "Twenty-First Century Books",
+            "publishedDate": "2003",
+            "description": "Traces the troubled life of writer F. Scott Fitzgerald, from his spoiled, yet insecure childhood through his difficult marriage and writing career to his early death.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "0822500744"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9780822500742"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": true
+            },
+            "pageCount": 128,
+            "printType": "BOOK",
+            "categories": [
+             "Juvenile Nonfiction"
+            ],
+            "contentVersion": "0.1.1.0.preview.1",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=HABKH7i-7UUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=HABKH7i-7UUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=HABKH7i-7UUC&printsec=frontcover&dq=F.+Scott+Fitzgerald&hl=&cd=7&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=HABKH7i-7UUC&dq=F.+Scott+Fitzgerald&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/F_Scott_Fitzgerald.html?hl=&id=HABKH7i-7UUC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=HABKH7i-7UUC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "Traces the troubled life of writer F. Scott Fitzgerald, from his spoiled, yet insecure childhood through his difficult marriage and writing career to his early death."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "MQKUeoO4EnoC",
+           "etag": "ErK5uoR0vT4",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/MQKUeoO4EnoC",
+           "volumeInfo": {
+            "title": "F. Scott Fitzgerald",
+            "authors": [
+             "Harold Bloom"
+            ],
+            "publisher": "Infobase Publishing",
+            "publishedDate": "2009-01-01",
+            "description": "Includes a biography of F. Scott Fitzgerald and critical views and plot summaries of his work.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_13",
+              "identifier": "9781438115238"
+             },
+             {
+              "type": "ISBN_10",
+              "identifier": "1438115237"
+             }
+            ],
+            "readingModes": {
+             "text": true,
+             "image": true
+            },
+            "pageCount": 134,
+            "printType": "BOOK",
+            "categories": [
+             "Electronic books"
+            ],
+            "contentVersion": "0.0.1.0.preview.3",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=MQKUeoO4EnoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=MQKUeoO4EnoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=MQKUeoO4EnoC&printsec=frontcover&dq=F.+Scott+Fitzgerald&hl=&cd=8&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=MQKUeoO4EnoC&dq=F.+Scott+Fitzgerald&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/F_Scott_Fitzgerald.html?hl=&id=MQKUeoO4EnoC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/F_Scott_Fitzgerald-sample-epub.acsm?id=MQKUeoO4EnoC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/F_Scott_Fitzgerald-sample-pdf.acsm?id=MQKUeoO4EnoC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=MQKUeoO4EnoC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "Includes a biography of F. Scott Fitzgerald and critical views and plot summaries of his work."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "ol4XL3Rmki0C",
+           "etag": "zJ+uEwciwX0",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/ol4XL3Rmki0C",
+           "volumeInfo": {
+            "title": "F. Scott Fitzgerald",
+            "subtitle": "New Perspectives",
+            "authors": [
+             "Jackson R. Bryer",
+             "Alan Margolies",
+             "Ruth Prigozy"
+            ],
+            "publisher": "University of Georgia Press",
+            "publishedDate": "2012-03-15",
+            "description": "Years after his death, F. Scott Fitzgerald continues to captivate both the popular and the critical imagination. This collection of essays presents fresh insights into his writing, discussing neglected texts and approaching familiar works from new perspectives. Seventeen scholarly articles deal not only with Fitzgerald's novels but with his stories and essays as well, considering such topics as the Roman Catholic background of The Beautiful and Damned and the influence of Mark Twain on Fitzgerald's work and self-conception. The volume also features four personal essays by Fitzgerald's friends Budd Schulberg, Frances Kroll Ring, publisher Charles Scribner III, and writer George Garrett that shed new light on his personal and professional lives. Together these contributions demonstrate the continued vitality of Fitzgerald's work and establish new directions for ongoing discussions of his life and writing.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "0820343544"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9780820343549"
+             }
+            ],
+            "readingModes": {
+             "text": true,
+             "image": true
+            },
+            "pageCount": 296,
+            "printType": "BOOK",
+            "categories": [
+             "Literary Criticism"
+            ],
+            "contentVersion": "2.4.3.0.preview.3",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=ol4XL3Rmki0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=ol4XL3Rmki0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=ol4XL3Rmki0C&printsec=frontcover&dq=F.+Scott+Fitzgerald&hl=&cd=9&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=ol4XL3Rmki0C&dq=F.+Scott+Fitzgerald&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/F_Scott_Fitzgerald.html?hl=&id=ol4XL3Rmki0C"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "FOR_SALE",
+            "isEbook": true,
+            "listPrice": {
+             "amount": 24.95,
+             "currencyCode": "USD"
+            },
+            "retailPrice": {
+             "amount": 14.72,
+             "currencyCode": "USD"
+            },
+            "buyLink": "http://books.google.com/books?id=ol4XL3Rmki0C&dq=F.+Scott+Fitzgerald&hl=&buy=&source=gbs_api",
+            "offers": [
+             {
+              "finskyOfferType": 1,
+              "listPrice": {
+               "amountInMicros": 2.495E7,
+               "currencyCode": "USD"
+              },
+              "retailPrice": {
+               "amountInMicros": 1.472E7,
+               "currencyCode": "USD"
+              }
+             }
+            ]
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/F_Scott_Fitzgerald-sample-epub.acsm?id=ol4XL3Rmki0C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/F_Scott_Fitzgerald-sample-pdf.acsm?id=ol4XL3Rmki0C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=ol4XL3Rmki0C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "This collection of essays presents fresh insights into his writing, discussing neglected texts and approaching familiar works from new perspectives."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "S8ge74PaZdwC",
+           "etag": "BB/TNLdWe5w",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/S8ge74PaZdwC",
+           "volumeInfo": {
+            "title": "The Cambridge Companion to F. Scott Fitzgerald",
+            "authors": [
+             "Ruth Prigozy"
+            ],
+            "publisher": "Cambridge University Press",
+            "publishedDate": "2002",
+            "description": "Eleven specially commissioned essays by major Fitzgerald scholars present a clearly written and comprehensive assessment of F. Scott Fitzgerald as a writer and as a public and private figure. No aspect of his career is overlooked, from his first novel published in 1920, through his more than 170 short stories, to his last unfinished Hollywood novel. Contributions present the reader with a full and accessible picture of the background of American social and cultural change in the early decades of the twentieth century. The introduction traces Fitzgerald's career as a literary and public figure, and examines the extent to which public recognition has affected his reputation among scholars, critics, and general readers over the past sixty years. This volume offers undergraduates, graduates and general readers a full account of Fitzgerald's work as well as suggestions for further exploration of his work.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "0521624746"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9780521624749"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": true
+            },
+            "pageCount": 272,
+            "printType": "BOOK",
+            "categories": [
+             "Biography & Autobiography"
+            ],
+            "averageRating": 5.0,
+            "ratingsCount": 1,
+            "contentVersion": "1.0.1.0.preview.1",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=S8ge74PaZdwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=S8ge74PaZdwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=S8ge74PaZdwC&printsec=frontcover&dq=F.+Scott+Fitzgerald&hl=&cd=10&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=S8ge74PaZdwC&dq=F.+Scott+Fitzgerald&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/The_Cambridge_Companion_to_F_Scott_Fitzg.html?hl=&id=S8ge74PaZdwC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=S8ge74PaZdwC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "This volume offers undergraduates, graduates and general readers a full account of Fitzgerald&#39;s work as well as suggestions for further exploration of his work."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "kQJVUID_JV4C",
+           "etag": "wyE3zyb+9HU",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/kQJVUID_JV4C",
+           "volumeInfo": {
+            "title": "The Beautiful and Damned",
+            "authors": [
+             "F. Scott Fitzgerald"
+            ],
+            "publisher": "Arc Manor LLC",
+            "publishedDate": "2009-01",
+            "description": "THE BEAUTIFUL AND DAMNED, first published in 1922, is F. Scott Fitzgerald's second novel. It tells the story of Anthony Patch (a 1920s socialite and presumptive heir to a tycoon's fortune), the relationship with his wife Gloria, his service in the army, and alcoholism. The novel provides an excellent portrait of the Eastern elite as the Jazz Age begins its ascent. As with all of Fitzgerald's other novels, it is a brilliant character study and is also an exploration of the complexities of marriage and intimacy.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_13",
+              "identifier": "9781604506259"
+             },
+             {
+              "type": "ISBN_10",
+              "identifier": "1604506253"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": true
+            },
+            "pageCount": 312,
+            "printType": "BOOK",
+            "categories": [
+             "Fiction"
+            ],
+            "averageRating": 3.0,
+            "ratingsCount": 8,
+            "contentVersion": "0.0.2.0.preview.1",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=kQJVUID_JV4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=kQJVUID_JV4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=kQJVUID_JV4C&printsec=frontcover&dq=F.+Scott+Fitzgerald&hl=&cd=11&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=kQJVUID_JV4C&dq=F.+Scott+Fitzgerald&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/The_Beautiful_and_Damned.html?hl=&id=kQJVUID_JV4C"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "FOR_SALE",
+            "isEbook": true,
+            "listPrice": {
+             "amount": 7.2,
+             "currencyCode": "USD"
+            },
+            "retailPrice": {
+             "amount": 5.4,
+             "currencyCode": "USD"
+            },
+            "buyLink": "http://books.google.com/books?id=kQJVUID_JV4C&dq=F.+Scott+Fitzgerald&hl=&buy=&source=gbs_api",
+            "offers": [
+             {
+              "finskyOfferType": 1,
+              "listPrice": {
+               "amountInMicros": 7200000.0,
+               "currencyCode": "USD"
+              },
+              "retailPrice": {
+               "amountInMicros": 5400000.0,
+               "currencyCode": "USD"
+              }
+             }
+            ]
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "ALL_PAGES",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": true
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=kQJVUID_JV4C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "It tells the story of Anthony Patch (a 1920s socialite and presumptive heir to a tycoon&#39;s fortune), the relationship with his wife Gloria, his service in the army, and alcoholism."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "BLomOZbGMWsC",
+           "etag": "MuGSi41ycU0",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/BLomOZbGMWsC",
+           "volumeInfo": {
+            "title": "F. Scott Fitzgerald: Trimalchio",
+            "subtitle": "An Early Version of 'The Great Gatsby'",
+            "authors": [
+             "F. Scott Fitzgerald"
+            ],
+            "publisher": "Cambridge University Press",
+            "publishedDate": "2002-04-25",
+            "description": "Presents the complete text of the early version of \"The Great Gatsby\" along with a history of the work, explanatory notes, and a record of variants.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "0521890470"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9780521890472"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": true
+            },
+            "pageCount": 216,
+            "printType": "BOOK",
+            "categories": [
+             "Fiction"
+            ],
+            "contentVersion": "preview-1.0.0",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=BLomOZbGMWsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=BLomOZbGMWsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=BLomOZbGMWsC&printsec=frontcover&dq=F.+Scott+Fitzgerald&hl=&cd=12&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=BLomOZbGMWsC&dq=F.+Scott+Fitzgerald&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/F_Scott_Fitzgerald_Trimalchio.html?hl=&id=BLomOZbGMWsC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=BLomOZbGMWsC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "Presents the complete text of the early version of &quot;The Great Gatsby&quot; along with a history of the work, explanatory notes, and a record of variants."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "zrtPB1muLU0C",
+           "etag": "VJeYAciyK0E",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/zrtPB1muLU0C",
+           "volumeInfo": {
+            "title": "F. Scott Fitzgerald",
+            "authors": [
+             "Charles E. Shain"
+            ],
+            "publisher": "U of Minnesota Press",
+            "publishedDate": "1961",
+            "description": "F. Scott Fitzgerald - American Writers 15 was first published in 1961. Minnesota Archive Editions uses digital technology to make long-unavailable books once again accessible, and are published unaltered from the original University of Minnesota Press editions.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_13",
+              "identifier": "9781452909943"
+             },
+             {
+              "type": "ISBN_10",
+              "identifier": "1452909946"
+             }
+            ],
+            "readingModes": {
+             "text": true,
+             "image": true
+            },
+            "pageCount": 48,
+            "printType": "BOOK",
+            "categories": [
+             "Biography & Autobiography"
+            ],
+            "averageRating": 3.0,
+            "ratingsCount": 1,
+            "contentVersion": "0.4.2.0.preview.3",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=zrtPB1muLU0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=zrtPB1muLU0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=zrtPB1muLU0C&printsec=frontcover&dq=F.+Scott+Fitzgerald&hl=&cd=13&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=zrtPB1muLU0C&dq=F.+Scott+Fitzgerald&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/F_Scott_Fitzgerald.html?hl=&id=zrtPB1muLU0C"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "FOR_SALE_AND_RENTAL",
+            "isEbook": true,
+            "listPrice": {
+             "amount": 25.0,
+             "currencyCode": "USD"
+            },
+            "retailPrice": {
+             "amount": 14.75,
+             "currencyCode": "USD"
+            },
+            "buyLink": "http://books.google.com/books?id=zrtPB1muLU0C&dq=F.+Scott+Fitzgerald&hl=&buy=&source=gbs_api",
+            "offers": [
+             {
+              "finskyOfferType": 1,
+              "listPrice": {
+               "amountInMicros": 2.5E7,
+               "currencyCode": "USD"
+              },
+              "retailPrice": {
+               "amountInMicros": 1.475E7,
+               "currencyCode": "USD"
+              }
+             },
+             {
+              "finskyOfferType": 3,
+              "listPrice": {
+               "amountInMicros": 7500000.0,
+               "currencyCode": "USD"
+              },
+              "retailPrice": {
+               "amountInMicros": 6600000.0,
+               "currencyCode": "USD"
+              },
+              "rentalDuration": {
+               "unit": "DAY",
+               "count": 90.0
+              }
+             }
+            ]
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/F_Scott_Fitzgerald-sample-epub.acsm?id=zrtPB1muLU0C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/F_Scott_Fitzgerald-sample-pdf.acsm?id=zrtPB1muLU0C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=zrtPB1muLU0C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "Rich with historical and cultural value, these works are published unaltered from the original University of Minnesota Press editions."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "eEIfKVeIOEcC",
+           "etag": "JForn2U2OAI",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/eEIfKVeIOEcC",
+           "volumeInfo": {
+            "title": "F. Scott Fitzgerald, The Great Gatsby",
+            "authors": [
+             "Nicolas Tredell"
+            ],
+            "publisher": "Columbia University Press",
+            "publishedDate": "1997",
+            "description": "More critical writing exists on The Great Gatsby than on any other work of American fiction. This Columbia Critical Guide introduces and contextualizes the key critical debates surrounding Fitzgerald's novel. The extracts and essays included here reflect The Great Gatsby's place as one of the first American novels to make significant use of modernist techniques and explore the influence of this \"Lost Generation\" work on later American writings. In considering secondary sources from the twenties to the present, this smart and sophisticated study guide offers readers an invaluable resource on this complex rendering of a moment in American history.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "0231115350"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9780231115353"
+             }
+            ],
+            "readingModes": {
+             "text": true,
+             "image": true
+            },
+            "pageCount": 189,
+            "printType": "BOOK",
+            "categories": [
+             "Literary Criticism"
+            ],
+            "averageRating": 3.5,
+            "ratingsCount": 36,
+            "contentVersion": "1.0.3.0.preview.3",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=eEIfKVeIOEcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=eEIfKVeIOEcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=eEIfKVeIOEcC&printsec=frontcover&dq=F.+Scott+Fitzgerald&hl=&cd=14&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=eEIfKVeIOEcC&dq=F.+Scott+Fitzgerald&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/F_Scott_Fitzgerald_The_Great_Gatsby.html?hl=&id=eEIfKVeIOEcC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/F_Scott_Fitzgerald_The_Great_Gatsby-sample-epub.acsm?id=eEIfKVeIOEcC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=eEIfKVeIOEcC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "More critical writing exists on the great gatsby than on any other work of American fiction. This guide introduces and contextualizes the key critical debates surrounding Fitzgerald&#39;s novel."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "crkmAQAAMAAJ",
+           "etag": "jfGrzbAE0EY",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/crkmAQAAMAAJ",
+           "volumeInfo": {
+            "title": "F. Scott Fitzgerald",
+            "authors": [
+             "Judith Baughman"
+            ],
+            "publisher": "Gale Cengage",
+            "publishedDate": "2000",
+            "description": "Traces Fitzgerald's life, discusses the historical context of his works, and examines his novels and short stories.",
+            "industryIdentifiers": [
+             {
+              "type": "OTHER",
+              "identifier": "UOM:39076002027139"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": false
+            },
+            "pageCount": 229,
+            "printType": "BOOK",
+            "categories": [
+             "Literary Criticism"
+            ],
+            "contentVersion": "preview-1.0.0",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=crkmAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=crkmAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=crkmAQAAMAAJ&q=F.+Scott+Fitzgerald&dq=F.+Scott+Fitzgerald&hl=&cd=15&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=crkmAQAAMAAJ&dq=F.+Scott+Fitzgerald&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/F_Scott_Fitzgerald.html?hl=&id=crkmAQAAMAAJ"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=crkmAQAAMAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "Traces Fitzgerald&#39;s life, discusses the historical context of his works, and examines his novels and short stories."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "W6MDK86WnhoC",
+           "etag": "vZtoEuUdR8o",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/W6MDK86WnhoC",
+           "volumeInfo": {
+            "title": "Bloom's how to Write about F. Scott Fitzgerald",
+            "authors": [
+             "Kim Becnel"
+            ],
+            "publisher": "Infobase Publishing",
+            "publishedDate": "2008",
+            "description": "Discusses different styles of criticism, how to read as a critic, and strategies for writing critical essays, using as examples sample essays written about plots, themes, characters, and styles found in eleven of F. Scott Fitzgerald's works.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_13",
+              "identifier": "9780791094822"
+             },
+             {
+              "type": "ISBN_10",
+              "identifier": "0791094820"
+             }
+            ],
+            "readingModes": {
+             "text": true,
+             "image": true
+            },
+            "pageCount": 232,
+            "printType": "BOOK",
+            "categories": [
+             "Juvenile Nonfiction"
+            ],
+            "contentVersion": "0.0.2.0.preview.3",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=W6MDK86WnhoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=W6MDK86WnhoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=W6MDK86WnhoC&printsec=frontcover&dq=F.+Scott+Fitzgerald&hl=&cd=16&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=W6MDK86WnhoC&dq=F.+Scott+Fitzgerald&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/Bloom_s_how_to_Write_about_F_Scott_Fitzg.html?hl=&id=W6MDK86WnhoC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/Bloom_s_how_to_Write_about_F_Scott_Fitzg-sample-epub.acsm?id=W6MDK86WnhoC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/Bloom_s_how_to_Write_about_F_Scott_Fitzg-sample-pdf.acsm?id=W6MDK86WnhoC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=W6MDK86WnhoC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "Discusses different styles of criticism, how to read as a critic, and strategies for writing critical essays, using as examples sample essays written about plots, themes, characters, and styles found in eleven of F. Scott Fitzgerald&#39;s works ..."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "v_zqyIO5_GUC",
+           "etag": "+Yy6TBgSCVo",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/v_zqyIO5_GUC",
+           "volumeInfo": {
+            "title": "How to Analyze the Works of F. Scott Fitzgerald",
+            "authors": [
+             "Maggie Combs"
+            ],
+            "publisher": "ABDO",
+            "publishedDate": "2011-08-01",
+            "description": "This title explores the creative works of famous novelist F. Scott Fitzgerald. Books analyzed include \"Winter Dreams,\" The Great Gatsby, \"Bernice Bobs Her Hair,\" and Tender Is the Night. Clear, comprehensive text gives background biographical information of Fitzgerald. \"You Critique It\" feature invites readers to analyze other creative works on their own. A table of contents, timeline, list of works, resources, source notes, glossary, and an index are also included. Essential Critiques is a series in Essential Library, an imprint of ABDO Publishing Company.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_13",
+              "identifier": "9781617876417"
+             },
+             {
+              "type": "ISBN_10",
+              "identifier": "1617876410"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": true
+            },
+            "pageCount": 112,
+            "printType": "BOOK",
+            "categories": [
+             "Juvenile Nonfiction"
+            ],
+            "contentVersion": "preview-1.0.0",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=v_zqyIO5_GUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=v_zqyIO5_GUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=v_zqyIO5_GUC&printsec=frontcover&dq=F.+Scott+Fitzgerald&hl=&cd=17&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=v_zqyIO5_GUC&dq=F.+Scott+Fitzgerald&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/How_to_Analyze_the_Works_of_F_Scott_Fitz.html?hl=&id=v_zqyIO5_GUC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/How_to_Analyze_the_Works_of_F_Scott_Fitz-sample-pdf.acsm?id=v_zqyIO5_GUC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=v_zqyIO5_GUC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "This title explores the creative works of famous novelist F. Scott Fitzgerald."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "Tm-aQYp-EfsC",
+           "etag": "0XzP0Naoey4",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/Tm-aQYp-EfsC",
+           "volumeInfo": {
+            "title": "Fitzgerald: My Lost City",
+            "subtitle": "Personal Essays, 1920-1940",
+            "authors": [
+             "F. Scott Fitzgerald"
+            ],
+            "publisher": "Cambridge University Press",
+            "publishedDate": "2005-09-08",
+            "description": "A reconstruction of Fitzgerald's planned volume of personal essays.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "0521402395"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9780521402392"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": true
+            },
+            "pageCount": 340,
+            "printType": "BOOK",
+            "categories": [
+             "Fiction"
+            ],
+            "contentVersion": "1.0.1.0.preview.1",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=Tm-aQYp-EfsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=Tm-aQYp-EfsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=Tm-aQYp-EfsC&printsec=frontcover&dq=F.+Scott+Fitzgerald&hl=&cd=18&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=Tm-aQYp-EfsC&dq=F.+Scott+Fitzgerald&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/Fitzgerald_My_Lost_City.html?hl=&id=Tm-aQYp-EfsC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=Tm-aQYp-EfsC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "A reconstruction of Fitzgerald&#39;s planned volume of personal essays."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "klMWVELASj0C",
+           "etag": "42PSUXJV0nw",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/klMWVELASj0C",
+           "volumeInfo": {
+            "title": "F. Scott Fitzgerald's the Great Gatsby",
+            "authors": [
+             "Harold Bloom",
+             "Sterling Professor of Humanities Harold Bloom"
+            ],
+            "publisher": "Infobase Publishing",
+            "publishedDate": "2010",
+            "description": "Presents a series of critical essays discussing the structure, themes, and subject matter of Fitzgerald's story of the love between wealthy Jay Gatsby and the beautiful Daisy Buchanan.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_13",
+              "identifier": "9781438132761"
+             },
+             {
+              "type": "ISBN_10",
+              "identifier": "143813276X"
+             }
+            ],
+            "readingModes": {
+             "text": true,
+             "image": true
+            },
+            "pageCount": 191,
+            "printType": "BOOK",
+            "averageRating": 4.0,
+            "ratingsCount": 9,
+            "contentVersion": "0.0.1.0.preview.3",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=klMWVELASj0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=klMWVELASj0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=klMWVELASj0C&printsec=frontcover&dq=F.+Scott+Fitzgerald&hl=&cd=19&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=klMWVELASj0C&dq=F.+Scott+Fitzgerald&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/F_Scott_Fitzgerald_s_the_Great_Gatsby.html?hl=&id=klMWVELASj0C"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/F_Scott_Fitzgerald_s_the_Great_Gatsby-sample-epub.acsm?id=klMWVELASj0C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/F_Scott_Fitzgerald_s_the_Great_Gatsby-sample-pdf.acsm?id=klMWVELASj0C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=klMWVELASj0C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "Presents a series of critical essays discussing the structure, themes, and subject matter of Fitzgerald&#39;s story of the love between wealthy Jay Gatsby and the beautiful Daisy Buchanan."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "1livY71iv-cC",
+           "etag": "ikvanPj2/Ek",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/1livY71iv-cC",
+           "volumeInfo": {
+            "title": "F. Scott Fitzgerald on Authorship",
+            "authors": [
+             "Francis Scott Fitzgerald"
+            ],
+            "publisher": "Univ of South Carolina Press",
+            "publishedDate": "1996",
+            "description": "A collection of 46 works by Fitzgerald on writing",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "1570031460"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9781570031465"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": true
+            },
+            "pageCount": 203,
+            "printType": "BOOK",
+            "categories": [
+             "Language Arts & Disciplines"
+            ],
+            "contentVersion": "1.1.1.0.preview.1",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=1livY71iv-cC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=1livY71iv-cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=1livY71iv-cC&printsec=frontcover&dq=F.+Scott+Fitzgerald&hl=&cd=20&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=1livY71iv-cC&dq=F.+Scott+Fitzgerald&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/F_Scott_Fitzgerald_on_Authorship.html?hl=&id=1livY71iv-cC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=1livY71iv-cC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "The forty-six selections in this volume construct an autobiographical account of Fitzgerald&#39;s twenty-year endeavor to maintain careers as a commercial writer and as a literary artist."
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Fri, 20 Feb 2015 16:33:06 GMT
+recorded_with: VCR 2.9.3

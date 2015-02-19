@@ -1,0 +1,446 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/volumes?maxResults=5&q=the%20great%20gatsby&startIndex=15
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Fri, 20 Feb 2015 16:33:07 GMT
+      Date:
+      - Fri, 20 Feb 2015 16:33:07 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"PHCkwOQosQs8w9BZDLmaoHrExzU/0UBaiuOcZpwvxXCFNKqUt7REkDk"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '15880'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.08
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "books#volumes",
+         "totalItems": 983,
+         "items": [
+          {
+           "kind": "books#volume",
+           "id": "Qqj-wUK3TfMC",
+           "etag": "wCkERwKd1JE",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/Qqj-wUK3TfMC",
+           "volumeInfo": {
+            "title": "Critical Studies",
+            "subtitle": "The Great Gatsby",
+            "authors": [
+             "Kathleen Parkinson"
+            ],
+            "publisher": "Penguin UK",
+            "publishedDate": "1988-10-27",
+            "description": "Kathleen Parkinson places this brilliant and bitter satire on the moral failure of the Jazz Age firmly in the context of Scott Fitzgerald's life and times. She explores the intricate patterns of the novel, its chronology, locations, imagery and use of colour, and how these contribute to a seamless interplay of social comedy and symbolic landscape. She devotes a perceptive chapter to Fitzgerald's controversial portrayal of women and goes on to discuss how the central characters, Gatsby and Nick Carraway, embody and confront the dualism inherent in the American dream.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_13",
+              "identifier": "9780141932200"
+             },
+             {
+              "type": "ISBN_10",
+              "identifier": "0141932201"
+             }
+            ],
+            "readingModes": {
+             "text": true,
+             "image": false
+            },
+            "pageCount": 144,
+            "printType": "BOOK",
+            "categories": [
+             "Literary Criticism"
+            ],
+            "contentVersion": "1.3.2.0.preview.2",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=Qqj-wUK3TfMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=Qqj-wUK3TfMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=Qqj-wUK3TfMC&printsec=frontcover&dq=the+great+gatsby&hl=&cd=16&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=Qqj-wUK3TfMC&dq=the+great+gatsby&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/Critical_Studies.html?hl=&id=Qqj-wUK3TfMC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "FOR_SALE",
+            "isEbook": true,
+            "listPrice": {
+             "amount": 7.59,
+             "currencyCode": "USD"
+            },
+            "retailPrice": {
+             "amount": 5.84,
+             "currencyCode": "USD"
+            },
+            "buyLink": "http://books.google.com/books?id=Qqj-wUK3TfMC&dq=the+great+gatsby&hl=&buy=&source=gbs_api",
+            "offers": [
+             {
+              "finskyOfferType": 1,
+              "listPrice": {
+               "amountInMicros": 7590000.0,
+               "currencyCode": "USD"
+              },
+              "retailPrice": {
+               "amountInMicros": 5840000.0,
+               "currencyCode": "USD"
+              }
+             }
+            ]
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+            "epub": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/Critical_Studies-sample-epub.acsm?id=Qqj-wUK3TfMC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=Qqj-wUK3TfMC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "She explores the intricate patterns of the novel, its chronology, locations, imagery and use of colour, and how these contribute to a seamless interplay of social comedy and symbolic landscape."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "ERy7UWArfIoC",
+           "etag": "jZ/Np/GficQ",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/ERy7UWArfIoC",
+           "volumeInfo": {
+            "title": "The Great Gatsby and Modern Times",
+            "authors": [
+             "Ronald Berman"
+            ],
+            "publisher": "University of Illinois Press",
+            "publishedDate": "1996-01-01",
+            "description": "Using editorials, columns, advertisements, silent film, architecture, and photography, this title develops the theme of modern consciousness.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "0252065891"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9780252065897"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": true
+            },
+            "pageCount": 197,
+            "printType": "BOOK",
+            "categories": [
+             "Literary Criticism"
+            ],
+            "averageRating": 5.0,
+            "ratingsCount": 1,
+            "contentVersion": "1.0.1.0.preview.1",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=ERy7UWArfIoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=ERy7UWArfIoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=ERy7UWArfIoC&printsec=frontcover&dq=the+great+gatsby&hl=&cd=17&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=ERy7UWArfIoC&dq=the+great+gatsby&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/The_Great_Gatsby_and_Modern_Times.html?hl=&id=ERy7UWArfIoC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=ERy7UWArfIoC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "Using editorials, columns, advertisements, silent film, architecture, and photography, this title develops the theme of modern consciousness."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "DRCNxmicIgUC",
+           "etag": "wyEobCbCRt8",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/DRCNxmicIgUC",
+           "volumeInfo": {
+            "title": "The Great Gatsby (Study Guide)",
+            "subtitle": "BookCaps Study Guide",
+            "authors": [
+             "BookCaps",
+             "BookCaps Study Guides Staff"
+            ],
+            "publisher": "BookCaps Study Guides",
+            "publishedDate": "2012",
+            "description": "The perfect companion to F. Scott Fitzgerald's \"The Great Gatsby,\" this study guide contains a chapter by chapter analysis of the book, a summary of the plot, and a guide to major characters and themes.BookCap Study Guides do not contain text from the actual book, and are not meant to be purchased as alternatives to reading the book.We all need refreshers every now and then. Whether you are a student trying to cram for that big final, or someone just trying to understand a book more, BookCaps can help. We are a small, but growing company, and are adding titles every month.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_13",
+              "identifier": "9781610429788"
+             },
+             {
+              "type": "ISBN_10",
+              "identifier": "1610429788"
+             }
+            ],
+            "readingModes": {
+             "text": true,
+             "image": true
+            },
+            "printType": "BOOK",
+            "categories": [
+             "Biography & Autobiography"
+            ],
+            "contentVersion": "0.1.2.0.preview.3",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=DRCNxmicIgUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=DRCNxmicIgUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=DRCNxmicIgUC&printsec=frontcover&dq=the+great+gatsby&hl=&cd=18&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=DRCNxmicIgUC&dq=the+great+gatsby&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/The_Great_Gatsby_Study_Guide.html?hl=&id=DRCNxmicIgUC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "FOR_SALE",
+            "isEbook": true,
+            "listPrice": {
+             "amount": 0.79,
+             "currencyCode": "USD"
+            },
+            "retailPrice": {
+             "amount": 0.53,
+             "currencyCode": "USD"
+            },
+            "buyLink": "http://books.google.com/books?id=DRCNxmicIgUC&dq=the+great+gatsby&hl=&buy=&source=gbs_api",
+            "offers": [
+             {
+              "finskyOfferType": 1,
+              "listPrice": {
+               "amountInMicros": 790000.0,
+               "currencyCode": "USD"
+              },
+              "retailPrice": {
+               "amountInMicros": 530000.0,
+               "currencyCode": "USD"
+              }
+             }
+            ]
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/The_Great_Gatsby_Study_Guide-sample-epub.acsm?id=DRCNxmicIgUC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/The_Great_Gatsby_Study_Guide-sample-pdf.acsm?id=DRCNxmicIgUC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=DRCNxmicIgUC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "The perfect companion to F. Scott Fitzgerald&#39;s &quot;The Great Gatsby,&quot; this study guide contains a chapter by chapter analysis of the book, a summary of the plot, and a guide to major characters and themes.BookCap Study Guides do not contain ..."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "haQMAQAAMAAJ",
+           "etag": "BeBRfZF24rw",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/haQMAQAAMAAJ",
+           "volumeInfo": {
+            "title": "Approaches to teaching Fitzgerald's The great Gatsby",
+            "authors": [
+             "Jackson R. Bryer",
+             "Nancy P. VanArsdale"
+            ],
+            "publisher": "Modern Language Assn of Amer",
+            "publishedDate": "2009-01-30",
+            "description": "Who is this Gatsby anyhow? Answering that question, voiced by one of the book's characters, is fundamental to teaching F. Scott Fitzgerald's The Great Gatsby. Although there is no simple answer, classroom analysis of this classic American novel can lead to a rich exploration of the colorful yet contradictory period Fitzgerald dubbed the Jazz Age. The novel also prompts considerations of novelistic technique, specifically point of view, characterization, and narrative structure. This volume aims to give instructors of The Great Gatsby multiple tools and strategies for teaching the novel and for introducing students to the culture of the 1920s. Part 1, \"Materials,\" reviews the novel's composition history and the scholarly resources related to the novel. In part 2, \"Approaches,\" contributors demonstrate a range of frameworks that usefully inform teaching, from the new historicism to feminist and gender studies to narrative theory. They also examine the novel's complex artistry, variety of motifs and symbol patterns, and cultural and social influences, such as the era's changing racial attitudes, the rise of a new suburban culture, and the dichotomy of East versus West in America.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "1603290214"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9781603290210"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": false
+            },
+            "pageCount": 233,
+            "printType": "BOOK",
+            "categories": [
+             "Education"
+            ],
+            "contentVersion": "preview-1.0.0",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=haQMAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=haQMAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=haQMAQAAMAAJ&q=the+great+gatsby&dq=the+great+gatsby&hl=&cd=19&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=haQMAQAAMAAJ&dq=the+great+gatsby&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/Approaches_to_teaching_Fitzgerald_s_The.html?hl=&id=haQMAQAAMAAJ"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=haQMAQAAMAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "This volume aims to give instructors of The Great Gatsby multiple tools and strategies for teaching the novel and for introducing students to the culture of the 1920s."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "sLiTh0gmAWgC",
+           "etag": "inN9hfTZm/w",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/sLiTh0gmAWgC",
+           "volumeInfo": {
+            "title": "The Story Behind F. Scott Fitzgerald's The Great Gatsby",
+            "authors": [
+             "Laura Hensley"
+            ],
+            "publisher": "Heinemann-Raintree Library",
+            "publishedDate": "2006-07-01",
+            "description": "Provides a background for F. Scott Fitzgerald's famous novel by looking at relevant biographical details about his life and providing historical details that place the story in context, with a literary analysis of the novel.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "1403482055"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9781403482051"
+             }
+            ],
+            "readingModes": {
+             "text": false,
+             "image": true
+            },
+            "pageCount": 56,
+            "printType": "BOOK",
+            "categories": [
+             "Juvenile Nonfiction"
+            ],
+            "averageRating": 4.0,
+            "ratingsCount": 2,
+            "contentVersion": "preview-1.0.0",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=sLiTh0gmAWgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=sLiTh0gmAWgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=sLiTh0gmAWgC&printsec=frontcover&dq=the+great+gatsby&hl=&cd=20&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=sLiTh0gmAWgC&dq=the+great+gatsby&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/The_Story_Behind_F_Scott_Fitzgerald_s_Th.html?hl=&id=sLiTh0gmAWgC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": false
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=sLiTh0gmAWgC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "Provides a background for F. Scott Fitzgerald&#39;s famous novel by looking at relevant biographical details about his life and providing historical details that place the story in context, with a literary analysis of the novel."
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Fri, 20 Feb 2015 16:33:07 GMT
+recorded_with: VCR 2.9.3

@@ -5,7 +5,10 @@ module GoogleBooks
   class Item
     describe Item do
 
-      example = GoogleBooks.search('isbn:9780062132345').first
+      VCR.use_cassette("isbn", record: :once) do
+        request = GoogleBooks.search('isbn:9780062132345')
+        let(:example) { request.first }
+      end
 
       it "should append a subtitle to the title if it exists" do
         expect(example.title).to eq "Freakonomics: A Rogue Economist Explores the Hidden Side of Everything"

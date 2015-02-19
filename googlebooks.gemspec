@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.add_dependency('httparty')
   s.add_development_dependency('rspec')
   s.add_development_dependency('webmock')
+  s.add_development_dependency('vcr')
   s.add_development_dependency('rspec-its')
   s.add_development_dependency('rake')
 

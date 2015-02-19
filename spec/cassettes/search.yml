@@ -1,0 +1,453 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/books/v1/volumes?maxResults=5&q=the%20great%20gatsby&startIndex=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Fri, 20 Feb 2015 16:33:03 GMT
+      Date:
+      - Fri, 20 Feb 2015 16:33:03 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"PHCkwOQosQs8w9BZDLmaoHrExzU/7lFS0waggux7pMcPvC6KWlPGYjI"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '16025'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=0.08
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "books#volumes",
+         "totalItems": 1010,
+         "items": [
+          {
+           "kind": "books#volume",
+           "id": "JgxOs2GX86AC",
+           "etag": "xeaXpAMye10",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/JgxOs2GX86AC",
+           "volumeInfo": {
+            "title": "The Great Gatsby",
+            "authors": [
+             "F.Scott Fitzgerald"
+            ],
+            "publisher": "Interactive Media",
+            "publishedDate": "2012-02-14",
+            "description": "A social satire and a milestone in 20th century literature, 'The Great Gatsby' peels away the layers of the glamorous twenties in the U.S. to display the coldness and cruelty at its heart.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_13",
+              "identifier": "9781907832567"
+             },
+             {
+              "type": "ISBN_10",
+              "identifier": "1907832564"
+             }
+            ],
+            "readingModes": {
+             "text": true,
+             "image": true
+            },
+            "pageCount": 154,
+            "printType": "BOOK",
+            "categories": [
+             "Fiction"
+            ],
+            "averageRating": 4.0,
+            "ratingsCount": 519,
+            "contentVersion": "0.1.2.0.preview.3",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=JgxOs2GX86AC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=JgxOs2GX86AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=JgxOs2GX86AC&printsec=frontcover&dq=the+great+gatsby&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=JgxOs2GX86AC&dq=the+great+gatsby&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/The_Great_Gatsby.html?hl=&id=JgxOs2GX86AC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "FOR_SALE",
+            "isEbook": true,
+            "listPrice": {
+             "amount": 6.0,
+             "currencyCode": "USD"
+            },
+            "retailPrice": {
+             "amount": 4.62,
+             "currencyCode": "USD"
+            },
+            "buyLink": "http://books.google.com/books?id=JgxOs2GX86AC&dq=the+great+gatsby&hl=&buy=&source=gbs_api",
+            "offers": [
+             {
+              "finskyOfferType": 1,
+              "listPrice": {
+               "amountInMicros": 6000000.0,
+               "currencyCode": "USD"
+              },
+              "retailPrice": {
+               "amountInMicros": 4620000.0,
+               "currencyCode": "USD"
+              }
+             }
+            ]
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/The_Great_Gatsby-sample-epub.acsm?id=JgxOs2GX86AC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/The_Great_Gatsby-sample-pdf.acsm?id=JgxOs2GX86AC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=JgxOs2GX86AC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "A social satire and a milestone in 20th century literature, &#39;The Great Gatsby&#39; peels away the layers of the glamorous twenties in the U.S. to display the coldness and cruelty at its heart."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "KiWmF4wDNuUC",
+           "etag": "19lVFp5/MCo",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/KiWmF4wDNuUC",
+           "volumeInfo": {
+            "title": "The Great Gatsby",
+            "authors": [
+             "F. Scott Fitzgerald"
+            ],
+            "publisher": "Oxford University Press",
+            "publishedDate": "1998-03-05",
+            "description": "\"He talked a lot about the past and I gathered that he wanted to recover something, some idea of himself perhaps, that had gone into loving Daisy. His life had been confused and disordered since then, but if he could once return to a certain starting place and go over it all slowly, he could find out what that thing was . . .\" The Great Gatsby (1925), F. Scott Fitzgerald's masterpiece, stands among the greatest of all American fiction. Jay Gatsby's lavish lifestyle in a mansion on Long Island's gold coast encapsulates the spirit, excitement, and violence of the era Fitzgerald named `the Jazz Age'. Impelled by his love for Daisy Buchanan, Gatsby seeks nothing less than to recapture the moment five years earlier when his best and brightest dreams - his `unutterable visions' - seemed to be incarnated in her kiss. A moving portrayal of the power of romantic imagination, as well as the pathos and courage entailed in the pusuit of an unattainable dream, The Great Gatsby is a classic fiction of hope and disillusion. This edition is fully annotated with a fine Introduction incorporating new interpretation and detailing Fitzgerald's struggle to write the novel, its critical reception and its significance for future generations.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_13",
+              "identifier": "9780191647253"
+             },
+             {
+              "type": "ISBN_10",
+              "identifier": "019164725X"
+             }
+            ],
+            "readingModes": {
+             "text": true,
+             "image": true
+            },
+            "pageCount": 208,
+            "printType": "BOOK",
+            "categories": [
+             "Fiction"
+            ],
+            "averageRating": 4.0,
+            "ratingsCount": 513,
+            "contentVersion": "2.7.6.0.preview.3",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=KiWmF4wDNuUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=KiWmF4wDNuUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=KiWmF4wDNuUC&printsec=frontcover&dq=the+great+gatsby&hl=&cd=2&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=KiWmF4wDNuUC&dq=the+great+gatsby&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/The_Great_Gatsby.html?hl=&id=KiWmF4wDNuUC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/The_Great_Gatsby-sample-epub.acsm?id=KiWmF4wDNuUC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/The_Great_Gatsby-sample-pdf.acsm?id=KiWmF4wDNuUC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=KiWmF4wDNuUC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "This edition is fully annotated with a fine Introduction incorporating new interpretation and detailing Fitzgerald&#39;s struggle to write the novel, its critical reception and its significance for future generations."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "XBLwtxrusS0C",
+           "etag": "U6qdqMySCN8",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/XBLwtxrusS0C",
+           "volumeInfo": {
+            "title": "The Great Gatsby (Collins Classics)",
+            "authors": [
+             "F. Scott Fitzgerald"
+            ],
+            "publisher": "HarperCollins UK",
+            "publishedDate": "2012-05-31",
+            "description": "HarperCollins is proud to present its new range of best-loved, essential classics.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_13",
+              "identifier": "9780007477364"
+             },
+             {
+              "type": "ISBN_10",
+              "identifier": "0007477368"
+             }
+            ],
+            "readingModes": {
+             "text": true,
+             "image": false
+            },
+            "pageCount": 192,
+            "printType": "BOOK",
+            "categories": [
+             "Fiction"
+            ],
+            "averageRating": 4.0,
+            "ratingsCount": 521,
+            "contentVersion": "2.3.2.0.preview.2",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=XBLwtxrusS0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=XBLwtxrusS0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=XBLwtxrusS0C&printsec=frontcover&dq=the+great+gatsby&hl=&cd=3&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=XBLwtxrusS0C&dq=the+great+gatsby&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/The_Great_Gatsby_Collins_Classics.html?hl=&id=XBLwtxrusS0C"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+            "epub": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/The_Great_Gatsby_Collins_Classics-sample-epub.acsm?id=XBLwtxrusS0C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+             "isAvailable": false
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=XBLwtxrusS0C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "HarperCollins is proud to present its new range of best-loved, essential classics."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "klMWVELASj0C",
+           "etag": "NrbsHY0l4Rw",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/klMWVELASj0C",
+           "volumeInfo": {
+            "title": "F. Scott Fitzgerald's the Great Gatsby",
+            "authors": [
+             "Harold Bloom",
+             "Sterling Professor of Humanities Harold Bloom"
+            ],
+            "publisher": "Infobase Publishing",
+            "publishedDate": "2010",
+            "description": "Presents a series of critical essays discussing the structure, themes, and subject matter of Fitzgerald's story of the love between wealthy Jay Gatsby and the beautiful Daisy Buchanan.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_13",
+              "identifier": "9781438132761"
+             },
+             {
+              "type": "ISBN_10",
+              "identifier": "143813276X"
+             }
+            ],
+            "readingModes": {
+             "text": true,
+             "image": true
+            },
+            "pageCount": 191,
+            "printType": "BOOK",
+            "averageRating": 4.0,
+            "ratingsCount": 9,
+            "contentVersion": "0.0.1.0.preview.3",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=klMWVELASj0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=klMWVELASj0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=klMWVELASj0C&printsec=frontcover&dq=the+great+gatsby&hl=&cd=4&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=klMWVELASj0C&dq=the+great+gatsby&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/F_Scott_Fitzgerald_s_the_Great_Gatsby.html?hl=&id=klMWVELASj0C"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/F_Scott_Fitzgerald_s_the_Great_Gatsby-sample-epub.acsm?id=klMWVELASj0C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/F_Scott_Fitzgerald_s_the_Great_Gatsby-sample-pdf.acsm?id=klMWVELASj0C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=klMWVELASj0C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "Presents a series of critical essays discussing the structure, themes, and subject matter of Fitzgerald&#39;s story of the love between wealthy Jay Gatsby and the beautiful Daisy Buchanan."
+           }
+          },
+          {
+           "kind": "books#volume",
+           "id": "D7iRLn8ZsAIC",
+           "etag": "a410wq3MC9c",
+           "selfLink": "https://www.googleapis.com/books/v1/volumes/D7iRLn8ZsAIC",
+           "volumeInfo": {
+            "title": "Understanding The Great Gatsby",
+            "subtitle": "A Student Casebook to Issues, Sources, and Historical Documents",
+            "authors": [
+             "Dalton Gross",
+             "MaryJean Gross"
+            ],
+            "publisher": "Greenwood Publishing Group",
+            "publishedDate": "1998-01-01",
+            "description": "The only companion to The Great Gatsby to provide a rich collection of primary documents that illuminates its historical, social and cultural context.",
+            "industryIdentifiers": [
+             {
+              "type": "ISBN_10",
+              "identifier": "0313300976"
+             },
+             {
+              "type": "ISBN_13",
+              "identifier": "9780313300974"
+             }
+            ],
+            "readingModes": {
+             "text": true,
+             "image": true
+            },
+            "pageCount": 177,
+            "printType": "BOOK",
+            "categories": [
+             "Literary Criticism"
+            ],
+            "contentVersion": "1.0.2.0.preview.3",
+            "imageLinks": {
+             "smallThumbnail": "http://books.google.com/books/content?id=D7iRLn8ZsAIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+             "thumbnail": "http://books.google.com/books/content?id=D7iRLn8ZsAIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=D7iRLn8ZsAIC&printsec=frontcover&dq=the+great+gatsby&hl=&cd=5&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=D7iRLn8ZsAIC&dq=the+great+gatsby&hl=&source=gbs_api",
+            "canonicalVolumeLink": "http://books.google.com/books/about/Understanding_The_Great_Gatsby.html?hl=&id=D7iRLn8ZsAIC"
+           },
+           "saleInfo": {
+            "country": "US",
+            "saleability": "FOR_SALE",
+            "isEbook": true,
+            "listPrice": {
+             "amount": 51.95,
+             "currencyCode": "USD"
+            },
+            "retailPrice": {
+             "amount": 41.04,
+             "currencyCode": "USD"
+            },
+            "buyLink": "http://books.google.com/books?id=D7iRLn8ZsAIC&dq=the+great+gatsby&hl=&buy=&source=gbs_api",
+            "offers": [
+             {
+              "finskyOfferType": 1,
+              "listPrice": {
+               "amountInMicros": 5.195E7,
+               "currencyCode": "USD"
+              },
+              "retailPrice": {
+               "amountInMicros": 4.104E7,
+               "currencyCode": "USD"
+              }
+             }
+            ]
+           },
+           "accessInfo": {
+            "country": "US",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/Understanding_The_Great_Gatsby-sample-epub.acsm?id=D7iRLn8ZsAIC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+             "isAvailable": true,
+             "acsTokenLink": "http://books.google.com/books/download/Understanding_The_Great_Gatsby-sample-pdf.acsm?id=D7iRLn8ZsAIC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://books.google.com/books/reader?id=D7iRLn8ZsAIC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+           },
+           "searchInfo": {
+            "textSnippet": "The only companion to The Great Gatsby to provide a rich collection of primary documents that illuminates its historical, social and cultural context."
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Fri, 20 Feb 2015 16:33:03 GMT
+recorded_with: VCR 2.9.3
