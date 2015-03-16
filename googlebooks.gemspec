@@ -13,7 +13,8 @@ Gem::Specification.new do |s|
   s.description = %q{GoogleBooks is a lightweight Ruby wrapper that queries the Google API to search for publications in the Google Books repository. It is inspired by the google-book gem which relies on the deprecated Google GData Books API, but is updated to hook into the current Google API.}
 
   s.rubyforge_project = "googlebooks"
-
+  s.license = 'GPL-3'
+  
   s.add_dependency('httparty')
   s.add_development_dependency('rspec')
   s.add_development_dependency('webmock')
