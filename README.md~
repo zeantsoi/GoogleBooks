@@ -173,21 +173,9 @@ Examples:
 
 Download Link
 -------------
-Using the `search` method you have to include the option `download` and this will enabled 2 more attributes `download_link` and `public_domain`.
- 
-Examples:
-
-   require 'googlebooks'
-
-   books = GoogleBooks.search('The Great Gatsby', {:download => 'pdf', :api_key => 'THIS_IS_YOUR_API_KEY'}) 
-   
-   books.each do |book|
-     if book.public_domain 
-       puts book.download_link 
-     else
-       puts "no download link" 
-     end
-   end
+Using the `search` method you have to include the option `download` and this will enabled 2 more attributes
+	
+ GoogleBooks.search('The Great Gatsby', {:download => 'pdf', :api_key => 'THIS_IS_YOUR_API_KEY'}) 
     
   
 Support for distributed production servers
