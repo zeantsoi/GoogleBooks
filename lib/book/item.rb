@@ -1,7 +1,7 @@
 module GoogleBooks
 
   class Item
-    attr_reader :kind, :id, :title, :titles_array, :authors, :authors_array, :publisher, :published_date, :description, :isbn, :isbn_10, :isbn_13, :other_identifier, :page_count, :print_type, :categories, :average_rating, :ratings_count, :language, :preview_link, :info_link, :sale_info
+    attr_reader :public_domain, :download_link,:kind, :id, :title, :titles_array, :authors, :authors_array, :publisher, :published_date, :description, :isbn, :isbn_10, :isbn_13, :other_identifier, :page_count, :print_type, :categories, :average_rating, :ratings_count, :language, :preview_link, :info_link, :sale_info
 
     def initialize(item)
       @item = item
@@ -29,6 +29,8 @@ module GoogleBooks
       @publisher = @volume_info['publisher']
       @published_date = @volume_info['publishedDate']
       @description = @volume_info['description']
+      @download_link = @item['accessInfo']['pdf']['downloadLink']
+      @public_domain = @item['accessInfo']['publicDomain']
 
       retrieve_industry_identifiers
 
