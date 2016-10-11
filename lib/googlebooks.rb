@@ -7,8 +7,11 @@ require 'cgi'
 module GoogleBooks
 
   include HTTParty
+  # Don't verify SSL certificate - as it's not valid
+  default_options.update(verify: false)
+
   format :json
-  
+
   class << self
 
     attr_accessor :parameters
