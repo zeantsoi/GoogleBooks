@@ -45,7 +45,8 @@ module GoogleBooks
 
     def build_title
       title = [@volume_info['title']].flatten.join(': ')
-      @volume_info['subtitle'].nil? ? title : title + ": " + @volume_info['subtitle']
+      subtitle_missing = @volume_info['subtitle'].nil? || @volume_info['subtitle'].length == 0
+      subtitle_missing ? title : title + ": " + @volume_info['subtitle']
     end
 
     def retrieve_industry_identifiers
